@@ -1,0 +1,8 @@
+target 'BaseProject' do
+pod 'SVProgressHUD'
+pod 'MJRefresh'
+pod 'SDWebImage' 
+pod 'AFNetworking'
+pod 'Masonry'
+pod 'UICKeyChainStore', '~> 2.1.0'
+end
