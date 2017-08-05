@@ -24,6 +24,7 @@
 }
 
 +(void)showMessageWithStatus:(NSString *)status{
+    [SVProgressHUD dismiss];
     [self showMessageWithStatus:status dismissAfter:DismissTime];
 }
 
