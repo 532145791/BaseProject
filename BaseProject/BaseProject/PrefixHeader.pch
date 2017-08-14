@@ -19,6 +19,13 @@
 #define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
 #define ViewTitleSize 17
 #define NavigationLeftOrRightItemFont 15
+#define WhiteBackImage @"nav-white-back"
+#define BlackBackImage @"nav-black-back"
+//字体
+#define Font_PingFang_Regular   @"PingFangSC-Regular"
+#define Font_PingFang_Light     @"PingFangSC-Light"
+#define Font_PingFang_Medium    @"PingFangSC-Medium"
+#define Font_PingFang_Semibold  @"PingFangSC-Semibold"
 
 //第三方
 #import <MJRefresh/MJRefresh.h>

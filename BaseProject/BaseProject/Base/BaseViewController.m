@@ -8,8 +8,8 @@
 
 #import "BaseViewController.h"
 
-static NSInteger leftBtnWidth = 50;
-static NSInteger leftBtnHeight = 44;
+static NSInteger btnWidth = 33;
+static NSInteger btnHeight = 44;
 @interface BaseViewController ()
 
 @end
@@ -32,122 +32,31 @@ static NSInteger leftBtnHeight = 44;
         self.navigationController.interactivePopGestureRecognizer.delegate = nil;
     }
     if (title) {
-        UILabel *titleLabel=[[UILabel alloc]init];
-        titleLabel.text= title;
-        [titleLabel setFont:[UIFont boldSystemFontOfSize:ViewTitleSize]];
-        [titleLabel setTextColor:[UIColor colorWithHexString:@"333333"]];
+        UILabel *titleLabel = [[UILabel alloc]init];
+        titleLabel.text = title;
+        titleLabel.font = [UIFont fontWithName:Font_PingFang_Semibold size:17];
+        [titleLabel setTextColor:[UIColor colorWithHexString:@"4a4a4a"]];
         [titleLabel sizeToFit];
-        self.navigationItem.titleView=titleLabel;
+        self.navigationItem.titleView = titleLabel;
     }
 }
 
--(void)setNavigationWithTitle:(NSString *)title leftBtnWithTitle:(NSString *)leftTitle{
+-(void)setNavigationWithTitle:(NSString *)title showBackBtn:(BOOL)isShow{
     [self setNavigationWithTitle:title];
-    
-    if (leftTitle) {
-        UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, leftBtnWidth, leftBtnHeight)];
-        view.userInteractionEnabled = YES;
-        UITapGestureRecognizer *imgtap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(touchLeftBtn)];
-        [view addGestureRecognizer:imgtap];
-        
-        UILabel *lab = [[UILabel alloc] init];
-        lab.text = leftTitle;
-        lab.textColor = [UIColor colorWithHexString:@"333333"];
-        lab.font = [UIFont systemFontOfSize:NavigationLeftOrRightItemFont];
-        [lab sizeToFit];
-        lab.frame = CGRectMake(0, (view.frame.size.height - lab.frame.size.height)/2, lab.frame.size.width, lab.frame.size.height);
-        [view addSubview:lab];
-        
-        UIBarButtonItem *leftBar = [[UIBarButtonItem alloc] initWithCustomView:view];
-        UIBarButtonItem *negativeSpacer = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
-        negativeSpacer.width = -6;//这个数值可以根据情况自由变化
-        self.navigationItem.leftBarButtonItems = @[negativeSpacer,leftBar];
-    }else{
-        UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, leftBtnWidth, leftBtnHeight)];
-        view.userInteractionEnabled = YES;
-        UITapGestureRecognizer *imgtap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(touchLeftBtn)];
-        [view addGestureRecognizer:imgtap];
-        
-        UIImageView *imgView = [[UIImageView alloc] init];
-        imgView.frame = CGRectMake(0, 11, 22, 22);
-        imgView.image = [UIImage imageNamed:@"nav-black-back"];
-        [view addSubview:imgView];
-        
-        UIBarButtonItem *leftBar = [[UIBarButtonItem alloc] initWithCustomView:view];
-        UIBarButtonItem *negativeSpacer = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
-        negativeSpacer.width = -6;//这个数值可以根据情况自由变化
-        self.navigationItem.leftBarButtonItems = @[negativeSpacer,leftBar];
+    if (isShow) {
+        [self setLeftBtnWithImageName:BlackBackImage];
     }
 }
 
--(void)setNavigationWithTitle:(NSString *)title rightBtnWithImageName:(NSString *)imageName leftBtnWithTitle:(NSString *)leftTitle{
-    [self setNavigationWithTitle:title leftBtnWithTitle:leftTitle];
+-(void)setLeftBtnWithImageName:(NSString *)imageName{
+    UIButton *leftBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [leftBtn setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
+    leftBtn.frame = CGRectMake(0, 0, btnWidth, btnHeight);
+    [leftBtn addTarget:self action:@selector(touchLeftBtn) forControlEvents:UIControlEventTouchUpInside];
+    [leftBtn setImageEdgeInsets:UIEdgeInsetsMake(0, -20, 0, 20)];
     
-    if (imageName) {
-        UIImageView *img = [[UIImageView alloc] initWithImage:[UIImage imageNamed:imageName]];
-        img.userInteractionEnabled = YES;
-        UITapGestureRecognizer *imgtap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(touchRightBtn)];
-        [img addGestureRecognizer:imgtap];
-        
-        UIBarButtonItem *negativeSpacer = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
-        negativeSpacer.width = 0;//这个数值可以根据情况自由变化
-        
-        UIBarButtonItem *right = [[UIBarButtonItem alloc] initWithCustomView:img];
-        self.navigationItem.rightBarButtonItems = @[negativeSpacer,right];
-    }
-    
-}
-
--(void)setNavigationWithTitle:(NSString *)title rightBtnWithTitle:(NSString *)rightTitle leftBtnWithTitle:(NSString *)leftTitle{
-    [self setNavigationWithTitle:title leftBtnWithTitle:leftTitle];
-    
-    if (rightTitle) {
-        UIButton *rightBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [rightBtn setTitle:rightTitle forState:UIControlStateNormal];
-        rightBtn.titleLabel.font = [UIFont systemFontOfSize:NavigationLeftOrRightItemFont];
-        [rightBtn setTitleColor:[UIColor colorWithHexString:@"333333"] forState:UIControlStateNormal];
-        [rightBtn sizeToFit];
-        [rightBtn addTarget:self action:@selector(touchRightBtn) forControlEvents:UIControlEventTouchUpInside];
-        UIBarButtonItem *negativeSpacer = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
-        negativeSpacer.width = -12;//这个数值可以根据情况自由变化
-        
-        UIBarButtonItem *right = [[UIBarButtonItem alloc] initWithCustomView:rightBtn];
-        self.navigationItem.rightBarButtonItems = @[negativeSpacer,right];
-    }
-}
-
--(void)setNavigationWithTitle:(NSString *)title rightBtnWithImageName:(NSString *)rightImageName leftBtnWithImageName:(NSString *)leftImageName{
-    [self setNavigationWithTitle:title];
-    
-    if (rightImageName) {
-        UIImageView *img = [[UIImageView alloc] initWithImage:[UIImage imageNamed:rightImageName]];
-        img.userInteractionEnabled = YES;
-        UITapGestureRecognizer *imgtap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(touchRightBtn)];
-        [img addGestureRecognizer:imgtap];
-        
-        UIBarButtonItem *negativeSpacer = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
-        negativeSpacer.width = 0;//这个数值可以根据情况自由变化
-        
-        UIBarButtonItem *right = [[UIBarButtonItem alloc] initWithCustomView:img];
-        self.navigationItem.rightBarButtonItems = @[negativeSpacer,right];
-    }
-    
-    if (leftImageName) {
-        UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, leftBtnWidth, leftBtnHeight)];
-        view.userInteractionEnabled = YES;
-        UITapGestureRecognizer *imgtap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(touchLeftBtn)];
-        [view addGestureRecognizer:imgtap];
-        
-        UIImageView *imgView = [[UIImageView alloc] init];
-        imgView.frame = CGRectMake(0, 11, 22, 22);
-        imgView.image = [UIImage imageNamed:leftImageName];
-        [view addSubview:imgView];
-        
-        UIBarButtonItem *leftBar = [[UIBarButtonItem alloc] initWithCustomView:view];
-        UIBarButtonItem *negativeSpacer = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
-        negativeSpacer.width = -6;//这个数值可以根据情况自由变化
-        self.navigationItem.leftBarButtonItems = @[negativeSpacer,leftBar];
-    }
+    UIBarButtonItem *leftBar = [[UIBarButtonItem alloc] initWithCustomView:leftBtn];
+    self.navigationItem.leftBarButtonItem = leftBar;
 }
 
 -(void)setNavigationBar{
