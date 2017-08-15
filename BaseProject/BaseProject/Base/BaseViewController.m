@@ -41,11 +41,9 @@ static NSInteger btnHeight = 44;
     }
 }
 
--(void)setNavigationWithTitle:(NSString *)title showBackBtn:(BOOL)isShow{
+-(void)setNavigationShowBackBtnWithNavigationTitle:(NSString *)title{
     [self setNavigationWithTitle:title];
-    if (isShow) {
-        [self setLeftBtnWithImageName:BlackBackImage];
-    }
+    [self setLeftBtnWithImageName:BlackBackImage];
 }
 
 -(void)setLeftBtnWithImageName:(NSString *)imageName{

@@ -15,6 +15,12 @@
 -(void)touchRightBtn;
 //导航条格式：返回按钮(自定义(图片)) ----  title ---- 右按钮（自定义(图片)）   -------用这个方法重写导航后 没法右滑返回 需要实现以下这个方法才能返回
 -(void)setNavigationBar;
+/**
+ 无返回按钮
+ */
 -(void)setNavigationWithTitle:(NSString *)title;
--(void)setNavigationWithTitle:(NSString *)title showBackBtn:(BOOL)isShow;
+/**
+ 有返回按钮
+ */
+-(void)setNavigationShowBackBtnWithNavigationTitle:(NSString *)title;
 @end
