@@ -35,7 +35,7 @@ static NSInteger btnHeight = 44;
         UILabel *titleLabel = [[UILabel alloc]init];
         titleLabel.text = title;
         titleLabel.font = [UIFont fontWithName:Font_PingFang_Semibold size:17];
-        [titleLabel setTextColor:[UIColor colorWithHexString:@"4a4a4a"]];
+        [titleLabel setTextColor:[UIColor colorWithHexString:@"000000"]];
         [titleLabel sizeToFit];
         self.navigationItem.titleView = titleLabel;
     }
@@ -58,18 +58,20 @@ static NSInteger btnHeight = 44;
 }
 
 -(void)setNavigationBar{
+    //设置导航不透明
     self.navigationController.navigationBar.translucent = NO;
-    self.navigationController.navigationBar.barStyle = UIStatusBarStyleDefault;
-    [self.navigationController.navigationBar setTintColor:[UIColor colorWithHexString:@"#333333"]];
-    [self hiddenNavigationShadowImage];
-    //    //解决 从有导航界面push无导航界面时，导航出现黑色背景的bug
-    self.navigationController.view.backgroundColor = [UIColor whiteColor];
+    //设置导航的背景色
+    [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithHexString:@"ffffff"]];
+    //去掉导航下面的那根线
+    [self.navigationController.navigationBar setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];//设置透明的背景图，便于识别底部线条有没有被隐藏
+    [self.navigationController.navigationBar setShadowImage:[[UIImage alloc] init]];//此处使底部线条失效
+    //解决 从有导航界面push无导航界面时，导航出现黑色背景的bug
+//    self.navigationController.view.backgroundColor = [UIColor whiteColor];
 }
 
 #pragma mark - 隐藏导航下面的那根线
 -(void)hiddenNavigationShadowImage{
-    [self.navigationController.navigationBar setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
-    [self.navigationController.navigationBar setShadowImage:[[UIImage alloc] init]];
+    
 }
 
 #pragma mark - 点击左边按钮

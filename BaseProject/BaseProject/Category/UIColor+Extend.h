@@ -9,9 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface UIColor (Extend)
+
 /**
  颜色转换三：iOS中十六进制的颜色（以#开头）转换为UIColor
- 
+
+ @param color 16进制的颜色
+ @return UIColor
  */
 + (UIColor *) colorWithHexString: (NSString *)color;
 

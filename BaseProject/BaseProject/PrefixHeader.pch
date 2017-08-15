@@ -46,7 +46,8 @@
 #import "UIView+Additions.h"
 #import "UIView+Extension.h"
 #import "NSString+Emoji.h"
-
+#import "UIImage+Extension.h"
+#import "UIViewController+Extension.h"
 //common
 #import "Notification.h"
 #import "GlobalVariables.h"

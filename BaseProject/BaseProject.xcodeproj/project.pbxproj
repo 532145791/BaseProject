@@ -32,12 +32,14 @@
 		4B390E581F05FC9200E84522 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B390E571F05FC9200E84522 /* ThirdViewController.m */; };
 		4B390E5D1F05FE3900E84522 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B390E5A1F05FE3900E84522 /* UIView+Extension.m */; };
 		4B390E5E1F05FE3900E84522 /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B390E5C1F05FE3900E84522 /* UIView+Additions.m */; };
+		4B5030161F42DE5A004FA2B0 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B5030151F42DE5A004FA2B0 /* UIImage+Extension.m */; };
 		4B8ACC3C1F2F60690020B0F9 /* NSString+Emoji.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8ACC3B1F2F60690020B0F9 /* NSString+Emoji.m */; };
 		4B8ACC3F1F2F62960020B0F9 /* LCSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8ACC3E1F2F62960020B0F9 /* LCSegmentedControl.m */; };
 		4BB40F641F3062F90028E404 /* LocationTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BB40F631F3062F90028E404 /* LocationTool.m */; };
 		4BB40F671F306AC30028E404 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BB40F661F306AC30028E404 /* BaseTableViewController.m */; };
 		4BB40F6A1F306F250028E404 /* BaseCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BB40F691F306F250028E404 /* BaseCollectionViewController.m */; };
 		4BB40F6D1F3074130028E404 /* BaseScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BB40F6C1F3074130028E404 /* BaseScrollViewController.m */; };
+		4BF1F60A1F42E795009C1DC4 /* UIViewController+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF1F6091F42E795009C1DC4 /* UIViewController+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +92,8 @@
 		4B390E5A1F05FE3900E84522 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		4B390E5B1F05FE3900E84522 /* UIView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Additions.h"; sourceTree = "<group>"; };
 		4B390E5C1F05FE3900E84522 /* UIView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Additions.m"; sourceTree = "<group>"; };
+		4B5030141F42DE5A004FA2B0 /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		4B5030151F42DE5A004FA2B0 /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
 		4B8ACC3A1F2F60690020B0F9 /* NSString+Emoji.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Emoji.h"; sourceTree = "<group>"; };
 		4B8ACC3B1F2F60690020B0F9 /* NSString+Emoji.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Emoji.m"; sourceTree = "<group>"; };
 		4B8ACC3D1F2F62960020B0F9 /* LCSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCSegmentedControl.h; sourceTree = "<group>"; };
@@ -102,6 +106,8 @@
 		4BB40F691F306F250028E404 /* BaseCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionViewController.m; sourceTree = "<group>"; };
 		4BB40F6B1F3074130028E404 /* BaseScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseScrollViewController.h; sourceTree = "<group>"; };
 		4BB40F6C1F3074130028E404 /* BaseScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseScrollViewController.m; sourceTree = "<group>"; };
+		4BF1F6081F42E795009C1DC4 /* UIViewController+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Extension.h"; sourceTree = "<group>"; };
+		4BF1F6091F42E795009C1DC4 /* UIViewController+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Extension.m"; sourceTree = "<group>"; };
 		5C13090DFCE1BF20BDF89CD7 /* Pods-BaseProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseProject/Pods-BaseProject.release.xcconfig"; sourceTree = "<group>"; };
 		A9F0DB2D046F17D6D6525298 /* Pods-BaseProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaseProject/Pods-BaseProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -214,6 +220,10 @@
 				4B390E211F05F1FF00E84522 /* SVProgressHUD+Extend.m */,
 				4B390E1C1F05EE8100E84522 /* UIColor+Extend.h */,
 				4B390E1D1F05EE8100E84522 /* UIColor+Extend.m */,
+				4B5030141F42DE5A004FA2B0 /* UIImage+Extension.h */,
+				4B5030151F42DE5A004FA2B0 /* UIImage+Extension.m */,
+				4BF1F6081F42E795009C1DC4 /* UIViewController+Extension.h */,
+				4BF1F6091F42E795009C1DC4 /* UIViewController+Extension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -420,7 +430,9 @@
 				4B390E341F05F45500E84522 /* TMDResponseSerializer.m in Sources */,
 				4B390E461F05F6C100E84522 /* GlobalVariables.m in Sources */,
 				4B390E321F05F45500E84522 /* HttpTool.m in Sources */,
+				4B5030161F42DE5A004FA2B0 /* UIImage+Extension.m in Sources */,
 				4B390E221F05F1FF00E84522 /* SVProgressHUD+Extend.m in Sources */,
+				4BF1F60A1F42E795009C1DC4 /* UIViewController+Extension.m in Sources */,
 				4B390E331F05F45500E84522 /* TMDRequestSerializer.m in Sources */,
 				4BB40F6D1F3074130028E404 /* BaseScrollViewController.m in Sources */,
 				4B390E3D1F05F62100E84522 /* Notification.m in Sources */,
