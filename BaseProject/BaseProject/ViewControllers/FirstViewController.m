@@ -17,11 +17,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
-    self.title = @"第一";
-//    self.navigationController.navigationBar.translucent = YES;
+    [self setNavigationWithTitle:@"第一"];
+    //导航透明
+    self.navigationController.navigationBar.translucent = YES;
+    //
     self.automaticallyAdjustsScrollViewInsets = NO;
-    [self.navigationController.navigationBar setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];//设置透明的背景图，便于识别底部线条有没有被隐藏
-    [self.navigationController.navigationBar setShadowImage:[[UIImage alloc] init]];//此处使底部线条失效
     self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.tableView];
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -39,10 +39,13 @@
     UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     if (!cell) {
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
-    }   cell.textLabel.text = @"https://coderZsq.github.io";
+    }   cell.textLabel.text = @"导航渐变";
     return cell;
 }
 
+/**
+ 实现渐变
+ */
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView{
     float alpha = 1 - ((64 - scrollView.contentOffset.y) / 64);
     [self setNavigationBarColor:[UIColor redColor] alpha:alpha];
