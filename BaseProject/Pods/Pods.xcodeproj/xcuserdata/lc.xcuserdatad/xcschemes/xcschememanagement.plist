@@ -9,7 +9,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>FBRetainCycleDetector.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>MJRefresh.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MLeaksFinder.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -47,7 +57,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>173E4BBA3E72FFE560F1987CA9068250</key>
+		<key>2C2D3FC6F2B8F2110B6D72BE9BA94969</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3DAE0B56B4882757FDB289AF7913FD5C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>96A928621666BE717DA3CB0AECB85AA1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -62,17 +82,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BE09C0FF4587959E8B7075C2302E7C05</key>
+		<key>AC139CEF10BCCB200972B4617F3CA14E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D9D361ADDE8852332CF9B0B30AF6729E</key>
+		<key>AF9D6EADD8E530631B349B6FDC56DA82</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DEE9629560D1DA0150A783DBFE683E8F</key>
+		<key>D93C99E26F0D48D06F8154B8328CCF36</key>
 		<dict>
 			<key>primary</key>
 			<true/>

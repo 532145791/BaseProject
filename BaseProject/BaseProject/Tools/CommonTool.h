@@ -9,10 +9,32 @@
 #import <Foundation/Foundation.h>
 
 @interface CommonTool : NSObject
+
+/**
+ 获取当前手机网络类型
+ */
 + (NSString *)networkType;
+
+/**
+ 获取build版本号
+ */
 + (NSString *)appBuild;
+
+/**
+ 获取version版本号
+ */
 + (NSString *)appVersion;
+
+/**
+ 获取系统版本号
+ */
 + (NSString *)systemVersion;
+
+/**
+ 获取
+
+ @return <#return value description#>
+ */
 + (NSString *)deviceName;
 + (NSString *)timeZone;
 + (NSString *)country;

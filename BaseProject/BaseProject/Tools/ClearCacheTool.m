@@ -21,8 +21,7 @@
 }
 
 + (NSString *)fileSizeWithInterge:(NSInteger)size{
-    //    小于1M
-    if (size<1024*1024) {
+    if (size<1024*1024) {//    小于1M
         CGFloat aFloat = size/(1024);
         return [NSString stringWithFormat:@"%.1fK",ceil(aFloat)];
     }else if (size < 1024 * 1024 * 1024){// 小于1G
