@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		211F4B130C9D963F15E1EDC7 /* libPods-BaseProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 093AF5C21D3EEC996143A416 /* libPods-BaseProject.a */; };
+		4B25BF461F4D59FA00B4A2C4 /* CropImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B25BF451F4D59FA00B4A2C4 /* CropImage.m */; };
 		4B390E001F05ED5900E84522 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B390DFF1F05ED5900E84522 /* main.m */; };
 		4B390E031F05ED5900E84522 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B390E021F05ED5900E84522 /* AppDelegate.m */; };
 		4B390E0B1F05ED5900E84522 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B390E0A1F05ED5900E84522 /* Assets.xcassets */; };
@@ -44,6 +45,8 @@
 
 /* Begin PBXFileReference section */
 		093AF5C21D3EEC996143A416 /* libPods-BaseProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BaseProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B25BF441F4D59FA00B4A2C4 /* CropImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CropImage.h; sourceTree = "<group>"; };
+		4B25BF451F4D59FA00B4A2C4 /* CropImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CropImage.m; sourceTree = "<group>"; };
 		4B390DFB1F05ED5900E84522 /* BaseProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B390DFF1F05ED5900E84522 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4B390E011F05ED5900E84522 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -252,6 +255,8 @@
 				4B390E2A1F05F2DD00E84522 /* MD5Tool.m */,
 				4BB40F621F3062F90028E404 /* LocationTool.h */,
 				4BB40F631F3062F90028E404 /* LocationTool.m */,
+				4B25BF441F4D59FA00B4A2C4 /* CropImage.h */,
+				4B25BF451F4D59FA00B4A2C4 /* CropImage.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -425,6 +430,7 @@
 				4B390E371F05F47000E84522 /* CommonTool.m in Sources */,
 				4BB40F671F306AC30028E404 /* BaseTableViewController.m in Sources */,
 				4B8ACC3F1F2F62960020B0F9 /* LCSegmentedControl.m in Sources */,
+				4B25BF461F4D59FA00B4A2C4 /* CropImage.m in Sources */,
 				4B390E491F05FB2600E84522 /* LCProgressHUD.m in Sources */,
 				4B390E521F05FC7C00E84522 /* FirstViewController.m in Sources */,
 				4B390E341F05F45500E84522 /* TMDResponseSerializer.m in Sources */,
