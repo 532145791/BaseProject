@@ -40,6 +40,7 @@
 		4BB40F671F306AC30028E404 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BB40F661F306AC30028E404 /* BaseTableViewController.m */; };
 		4BB40F6A1F306F250028E404 /* BaseCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BB40F691F306F250028E404 /* BaseCollectionViewController.m */; };
 		4BB40F6D1F3074130028E404 /* BaseScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BB40F6C1F3074130028E404 /* BaseScrollViewController.m */; };
+		4BE3953F1F50241F00357883 /* libTalkingData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BE3953D1F50241F00357883 /* libTalkingData.a */; };
 		4BF1F60A1F42E795009C1DC4 /* UIViewController+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF1F6091F42E795009C1DC4 /* UIViewController+Extension.m */; };
 /* End PBXBuildFile section */
 
@@ -109,6 +110,8 @@
 		4BB40F691F306F250028E404 /* BaseCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionViewController.m; sourceTree = "<group>"; };
 		4BB40F6B1F3074130028E404 /* BaseScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseScrollViewController.h; sourceTree = "<group>"; };
 		4BB40F6C1F3074130028E404 /* BaseScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseScrollViewController.m; sourceTree = "<group>"; };
+		4BE3953D1F50241F00357883 /* libTalkingData.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTalkingData.a; sourceTree = "<group>"; };
+		4BE3953E1F50241F00357883 /* TalkingData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TalkingData.h; sourceTree = "<group>"; };
 		4BF1F6081F42E795009C1DC4 /* UIViewController+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Extension.h"; sourceTree = "<group>"; };
 		4BF1F6091F42E795009C1DC4 /* UIViewController+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Extension.m"; sourceTree = "<group>"; };
 		5C13090DFCE1BF20BDF89CD7 /* Pods-BaseProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseProject/Pods-BaseProject.release.xcconfig"; sourceTree = "<group>"; };
@@ -120,6 +123,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BE3953F1F50241F00357883 /* libTalkingData.a in Frameworks */,
 				211F4B130C9D963F15E1EDC7 /* libPods-BaseProject.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -165,6 +169,7 @@
 		4B390DFD1F05ED5900E84522 /* BaseProject */ = {
 			isa = PBXGroup;
 			children = (
+				4BE3953B1F50241F00357883 /* Third */,
 				4B390E151F05EDB500E84522 /* Base */,
 				4B390E161F05EDB500E84522 /* Category */,
 				4B390E171F05EDB500E84522 /* NetWork */,
@@ -296,6 +301,23 @@
 				4B390E451F05F6C100E84522 /* GlobalVariables.m */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		4BE3953B1F50241F00357883 /* Third */ = {
+			isa = PBXGroup;
+			children = (
+				4BE3953C1F50241F00357883 /* TalkingData */,
+			);
+			path = Third;
+			sourceTree = "<group>";
+		};
+		4BE3953C1F50241F00357883 /* TalkingData */ = {
+			isa = PBXGroup;
+			children = (
+				4BE3953D1F50241F00357883 /* libTalkingData.a */,
+				4BE3953E1F50241F00357883 /* TalkingData.h */,
+			);
+			path = TalkingData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -566,6 +588,10 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/BaseProject/PrefixHeader.pch";
 				INFOPLIST_FILE = BaseProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BaseProject/Third/TalkingData",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lengchao.BaseProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -580,6 +606,10 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/BaseProject/PrefixHeader.pch";
 				INFOPLIST_FILE = BaseProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BaseProject/Third/TalkingData",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lengchao.BaseProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
