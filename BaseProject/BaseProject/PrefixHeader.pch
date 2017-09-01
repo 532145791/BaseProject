@@ -32,6 +32,7 @@
 #import <UIImageView+WebCache.h>
 #import <SDWebImage/SDImageCache.h>
 #import <Masonry.h>
+#import <YYKit.h>
 //工具类
 #import "MD5Tool.h"
 #import "CommonTool.h"
@@ -51,6 +52,6 @@
 //common
 #import "Notification.h"
 #import "GlobalVariables.h"
-
+#import "AppDelegate.h"
 #define BaseUrl @""
 #endif /* PrefixHeader_pch */

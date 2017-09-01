@@ -7,16 +7,21 @@
 //
 
 #import "AppDelegate.h"
-#import "TabBarViewController.h"
+
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
 
++ (instancetype)sharedAppDelegate
+{
+    return (AppDelegate *)[UIApplication sharedApplication].delegate;
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    TabBarViewController *tabbar = [[TabBarViewController alloc] init];
-    self.window.rootViewController = tabbar;
+    self.tabbar = [[TabBarViewController alloc] init];
+    self.window.rootViewController = self.tabbar;
     [self.window makeKeyAndVisible];
     return YES;
 }

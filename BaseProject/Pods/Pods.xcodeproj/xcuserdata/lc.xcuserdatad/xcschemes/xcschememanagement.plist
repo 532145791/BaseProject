@@ -49,6 +49,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>YYKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -57,17 +62,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2C2D3FC6F2B8F2110B6D72BE9BA94969</key>
+		<key>091E2B71CA0C898655C2CADB5A91059E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3DAE0B56B4882757FDB289AF7913FD5C</key>
+		<key>13D8DD9C57AA23AAE41F8F52EC9D3870</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>96A928621666BE717DA3CB0AECB85AA1</key>
+		<key>21D1A9735FCE36A8873B9070D0451B7F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3156EC8A65615254A00AB4DF03388284</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4E5A30466D02F10659D50AE7F7F8C602</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -88,11 +103,6 @@
 			<true/>
 		</dict>
 		<key>AF9D6EADD8E530631B349B6FDC56DA82</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>D93C99E26F0D48D06F8154B8328CCF36</key>
 		<dict>
 			<key>primary</key>
 			<true/>
