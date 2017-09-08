@@ -34,6 +34,7 @@
 		4B390E5D1F05FE3900E84522 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B390E5A1F05FE3900E84522 /* UIView+Extension.m */; };
 		4B390E5E1F05FE3900E84522 /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B390E5C1F05FE3900E84522 /* UIView+Additions.m */; };
 		4B5030161F42DE5A004FA2B0 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B5030151F42DE5A004FA2B0 /* UIImage+Extension.m */; };
+		4B6210D11F62863F003C7EE7 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B6210D01F62863F003C7EE7 /* BaseModel.m */; };
 		4B8ACC3C1F2F60690020B0F9 /* NSString+Emoji.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8ACC3B1F2F60690020B0F9 /* NSString+Emoji.m */; };
 		4B8ACC3F1F2F62960020B0F9 /* LCSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8ACC3E1F2F62960020B0F9 /* LCSegmentedControl.m */; };
 		4BB40F641F3062F90028E404 /* LocationTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BB40F631F3062F90028E404 /* LocationTool.m */; };
@@ -98,6 +99,8 @@
 		4B390E5C1F05FE3900E84522 /* UIView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Additions.m"; sourceTree = "<group>"; };
 		4B5030141F42DE5A004FA2B0 /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
 		4B5030151F42DE5A004FA2B0 /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
+		4B6210CF1F62863F003C7EE7 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		4B6210D01F62863F003C7EE7 /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
 		4B8ACC3A1F2F60690020B0F9 /* NSString+Emoji.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Emoji.h"; sourceTree = "<group>"; };
 		4B8ACC3B1F2F60690020B0F9 /* NSString+Emoji.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Emoji.m"; sourceTree = "<group>"; };
 		4B8ACC3D1F2F62960020B0F9 /* LCSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCSegmentedControl.h; sourceTree = "<group>"; };
@@ -208,6 +211,8 @@
 				4BB40F691F306F250028E404 /* BaseCollectionViewController.m */,
 				4BB40F6B1F3074130028E404 /* BaseScrollViewController.h */,
 				4BB40F6C1F3074130028E404 /* BaseScrollViewController.m */,
+				4B6210CF1F62863F003C7EE7 /* BaseModel.h */,
+				4B6210D01F62863F003C7EE7 /* BaseModel.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -453,6 +458,7 @@
 				4B390E4F1F05FBB800E84522 /* BaseViewController.m in Sources */,
 				4BB40F6A1F306F250028E404 /* BaseCollectionViewController.m in Sources */,
 				4B390E3A1F05F59400E84522 /* ClearCacheTool.m in Sources */,
+				4B6210D11F62863F003C7EE7 /* BaseModel.m in Sources */,
 				4B390E5D1F05FE3900E84522 /* UIView+Extension.m in Sources */,
 				4B390E431F05F69A00E84522 /* UserDefaults.m in Sources */,
 				4BE3956D1F58142100357883 /* XYTransition.m in Sources */,
