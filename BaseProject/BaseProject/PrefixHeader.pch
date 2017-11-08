@@ -49,6 +49,7 @@
 #import "NSString+Emoji.h"
 #import "UIImage+Extension.h"
 #import "UIViewController+Extension.h"
+#import "UIControl+NoRepeat.h"
 //common
 #import "Notification.h"
 #import "GlobalVariables.h"
