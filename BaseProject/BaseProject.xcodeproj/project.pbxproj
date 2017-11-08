@@ -42,6 +42,7 @@
 		4BB40F6A1F306F250028E404 /* BaseCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BB40F691F306F250028E404 /* BaseCollectionViewController.m */; };
 		4BB40F6D1F3074130028E404 /* BaseScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BB40F6C1F3074130028E404 /* BaseScrollViewController.m */; };
 		4BD1BA011FB2D4BB0060281A /* UIControl+NoRepeat.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD1BA001FB2D4BB0060281A /* UIControl+NoRepeat.m */; };
+		4BD1BA0A1FB30FF80060281A /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD1BA091FB30FF80060281A /* Reachability.m */; };
 		4BE3956D1F58142100357883 /* XYTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BE3956B1F58142100357883 /* XYTransition.m */; };
 		4BF1F60A1F42E795009C1DC4 /* UIViewController+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF1F6091F42E795009C1DC4 /* UIViewController+Extension.m */; };
 /* End PBXBuildFile section */
@@ -116,6 +117,8 @@
 		4BB40F6C1F3074130028E404 /* BaseScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseScrollViewController.m; sourceTree = "<group>"; };
 		4BD1B9FF1FB2D4BA0060281A /* UIControl+NoRepeat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+NoRepeat.h"; sourceTree = "<group>"; };
 		4BD1BA001FB2D4BB0060281A /* UIControl+NoRepeat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+NoRepeat.m"; sourceTree = "<group>"; };
+		4BD1BA081FB30FF80060281A /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		4BD1BA091FB30FF80060281A /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		4BE3956A1F58142100357883 /* XYTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYTransition.h; sourceTree = "<group>"; };
 		4BE3956B1F58142100357883 /* XYTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYTransition.m; sourceTree = "<group>"; };
 		4BE3956C1F58142100357883 /* XYTransitionProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYTransitionProtocol.h; sourceTree = "<group>"; };
@@ -250,6 +253,8 @@
 		4B390E171F05EDB500E84522 /* NetWork */ = {
 			isa = PBXGroup;
 			children = (
+				4BD1BA081FB30FF80060281A /* Reachability.h */,
+				4BD1BA091FB30FF80060281A /* Reachability.m */,
 				4B390E2C1F05F45500E84522 /* HttpTool.h */,
 				4B390E2D1F05F45500E84522 /* HttpTool.m */,
 				4B390E2E1F05F45500E84522 /* TMDRequestSerializer.h */,
@@ -484,6 +489,7 @@
 				4BD1BA011FB2D4BB0060281A /* UIControl+NoRepeat.m in Sources */,
 				4BF1F60A1F42E795009C1DC4 /* UIViewController+Extension.m in Sources */,
 				4B390E331F05F45500E84522 /* TMDRequestSerializer.m in Sources */,
+				4BD1BA0A1FB30FF80060281A /* Reachability.m in Sources */,
 				4BB40F6D1F3074130028E404 /* BaseScrollViewController.m in Sources */,
 				4B390E3D1F05F62100E84522 /* Notification.m in Sources */,
 				4BB40F641F3062F90028E404 /* LocationTool.m in Sources */,

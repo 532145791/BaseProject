@@ -9,6 +9,7 @@
 #import "HttpTool.h"
 #import <AFNetworking.h>
 #import "TMDRequestSerializer.h"
+#import "Reachability.h"
 static AFHTTPSessionManager *manager;
 static NSTimeInterval kTimeoutInterval = 30;
 @implementation HttpTool
@@ -44,20 +45,23 @@ static NSTimeInterval kTimeoutInterval = 30;
             manager.securityPolicy = securityPolicy;
         }
         
-        [manager.reachabilityManager setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
-            if (status == AFNetworkReachabilityStatusReachableViaWiFi) {
-                [manager.requestSerializer setValue:@"WIFI" forHTTPHeaderField:@"network"];
-            } else if (status == AFNetworkReachabilityStatusReachableViaWWAN) {
-                [manager.requestSerializer setValue:[CommonTool networkType] forHTTPHeaderField:@"network"];
-            } else if (status == AFNetworkReachabilityStatusNotReachable) {
-                [manager.requestSerializer setValue:@"None" forHTTPHeaderField:@"network"];
-            } else {
-                [manager.requestSerializer setValue:@"Unkown" forHTTPHeaderField:@"network"];
-            }
-        }];
-        [manager.reachabilityManager startMonitoring];
-        
     });
+    
+    Reachability *reach = [Reachability reachabilityForInternetConnection];
+    switch ([reach currentReachabilityStatus]) {
+        case NotReachable:
+            [manager.requestSerializer setValue:@"None" forHTTPHeaderField:@"network"];
+            break;
+        case ReachableViaWiFi:
+            [manager.requestSerializer setValue:@"WIFI" forHTTPHeaderField:@"network"];
+            break;
+        case ReachableViaWWAN:
+            [manager.requestSerializer setValue:[CommonTool networkType] forHTTPHeaderField:@"network"];
+            break;
+            
+        default:
+            break;
+    }
     
     return manager;
 }
