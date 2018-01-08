@@ -91,4 +91,10 @@
 {
     return self.frame.origin;
 }
+
+-(UIView *)lightGray_line{
+    UIView *line = [UIView new];
+    line.backgroundColor = [UIColor colorWithHexString:@"000000" alpha:0.1];
+    return line;
+}
 @end

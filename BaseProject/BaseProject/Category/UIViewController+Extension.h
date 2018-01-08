@@ -17,4 +17,10 @@
  @param alpha 透明度
  */
 - (void)setNavigationBarColor:(UIColor *)color alpha:(CGFloat)alpha;
+
+
+/**
+ 返回一条常用的浅灰色的线
+ */
+-(UIView *)lightGray_line;
 @end

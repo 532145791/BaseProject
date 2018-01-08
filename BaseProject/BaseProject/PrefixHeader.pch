@@ -43,7 +43,6 @@
 //类别
 #import "SVProgressHUD+Extend.h"
 #import "UIColor+Extend.h"
-#import "UIView+CornerRadius.h"
 #import "UIView+Additions.h"
 #import "UIView+Extension.h"
 #import "NSString+Emoji.h"

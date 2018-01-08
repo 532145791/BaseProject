@@ -17,4 +17,9 @@
 @property (nonatomic,assign) CGPoint origin;
 @property (nonatomic,assign) CGFloat centerX;
 @property (nonatomic,assign) CGFloat centerY;
+
+/**
+ 返回一条常用的浅灰色的线
+ */
+-(UIView *)lightGray_line;
 @end

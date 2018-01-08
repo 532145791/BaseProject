@@ -31,11 +31,12 @@
 + (NSString *)systemVersion;
 
 /**
- 获取
-
- @return <#return value description#>
+ 获取设备名称
  */
 + (NSString *)deviceName;
+/**
+ 获取当前设备时区
+ */
 + (NSString *)timeZone;
 + (NSString *)country;
 + (NSString *)language;

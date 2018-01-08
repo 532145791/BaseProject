@@ -10,10 +10,15 @@
 
 @implementation UIViewController (Extension)
 -(void)setNavigationBarColor:(UIColor *)color alpha:(CGFloat)alpha{
-    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageWithColor:[color colorWithAlphaComponent:alpha > 0.95f ? 0.95f : alpha]] forBarMetrics:UIBarMetricsDefault];
-//    if (self.navigationController.viewControllers.count > 1) {
-//        UIView * view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.view.width, 64)];
-//        view.backgroundColor = color; [self.view addSubview:view];
-//    }
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageWithColor:[color colorWithAlphaComponent:alpha]] forBarMetrics:UIBarMetricsDefault];
+    self.navigationController.navigationBar.translucent = alpha<1;
+    self.navigationController.navigationBar.shadowImage = alpha<1? [UIImage new] : nil;
 }
+
+-(UIView *)lightGray_line{
+    UIView *line = [UIView new];
+    line.backgroundColor = [UIColor colorWithHexString:@"000000" alpha:0.1];
+    return line;
+}
+
 @end
