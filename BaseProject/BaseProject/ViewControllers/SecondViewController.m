@@ -15,7 +15,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    [self setNavigationWithTitle:@"发现"];
 }
+
 
 @end

@@ -33,5 +33,5 @@
 /**
  给collectionView添加layout
  */
--(void)initCollectionViewWithItemWidth:(CGFloat)width itemHeight:(CGFloat)height lineSpace:(CGFloat)space;
+-(void)initCollectionViewWithItemWidth:(CGFloat)width itemHeight:(CGFloat)height lineSpace:(CGFloat)lineSpace interitemSpace:(CGFloat)interitemSpace;
 @end

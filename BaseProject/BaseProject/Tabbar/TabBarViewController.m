@@ -7,6 +7,7 @@
 //
 
 #import "TabBarViewController.h"
+#import "BaseNavigationViewController.h"
 #import "FirstViewController.h"
 #import "SecondViewController.h"
 #import "ThirdViewController.h"
@@ -38,9 +39,9 @@
 
 #pragma mark - 创建控制器
 - (void)setUpChildViewController{
-    UINavigationController *firstVC = [[UINavigationController alloc] initWithRootViewController:[[FirstViewController alloc] init]];
-    UINavigationController *secondVC = [[UINavigationController alloc] initWithRootViewController:[[SecondViewController alloc] init]];
-    UINavigationController *thirdVC = [[UINavigationController alloc] initWithRootViewController:[[ThirdViewController alloc] init]];
+    BaseNavigationViewController *firstVC = [[BaseNavigationViewController alloc] initWithRootViewController:[[FirstViewController alloc] init]];
+    BaseNavigationViewController *secondVC = [[BaseNavigationViewController alloc] initWithRootViewController:[[SecondViewController alloc] init]];
+    BaseNavigationViewController *thirdVC = [[BaseNavigationViewController alloc] initWithRootViewController:[[ThirdViewController alloc] init]];
     
     [self addOneChildViewController:firstVC
                           WithTitle:@"首页"
@@ -70,6 +71,37 @@
     viewController.tabBarItem.titlePositionAdjustment = UIOffsetMake(0, -2);
     
     [self addChildViewController:viewController];
+}
+
+#pragma mark - 控制屏幕旋转方法
+- (BOOL)shouldAutorotate
+{
+    BaseNavigationViewController *nav = (BaseNavigationViewController *)self.selectedViewController;
+    if ([nav.visibleViewController isKindOfClass:[NSClassFromString(@"AutorotateViewController") class]])
+    {
+        return YES;
+    }
+    return NO;
+}
+
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations
+{
+    BaseNavigationViewController *nav = (BaseNavigationViewController *)self.selectedViewController;
+    if ([nav.visibleViewController isKindOfClass:[NSClassFromString(@"AutorotateViewController") class]])
+    {
+        return UIInterfaceOrientationMaskAllButUpsideDown;
+    }
+    return UIInterfaceOrientationMaskPortrait;
+}
+
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
+{
+    BaseNavigationViewController *nav = (BaseNavigationViewController *)self.selectedViewController;
+    if ([nav.visibleViewController isKindOfClass:[NSClassFromString(@"AutorotateViewController") class]])
+    {
+        return UIInterfaceOrientationLandscapeLeft;
+    }
+    return UIInterfaceOrientationPortrait;
 }
 
 @end

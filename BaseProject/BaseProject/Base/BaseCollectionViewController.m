@@ -16,7 +16,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
 }
 
 #pragma mark - 添加下拉刷新（需要在子类中调用）
@@ -40,11 +39,12 @@
 }
 
 #pragma mark - 需要在子类中实现
--(void)initCollectionViewWithItemWidth:(CGFloat)width itemHeight:(CGFloat)height lineSpace:(CGFloat)space
+-(void)initCollectionViewWithItemWidth:(CGFloat)width itemHeight:(CGFloat)height lineSpace:(CGFloat)lineSpace interitemSpace:(CGFloat)interitemSpace
 {
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
     layout.itemSize = CGSizeMake(width, height);
-    layout.minimumLineSpacing = space;
+    layout.minimumLineSpacing = lineSpace;
+    layout.minimumInteritemSpacing = interitemSpace;
     
     self.collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
     self.collectionView.delegate = self;

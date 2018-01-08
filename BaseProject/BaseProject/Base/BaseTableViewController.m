@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
 }
 
 #pragma mark - 添加下拉刷新（需要在子类中调用）
@@ -53,10 +53,9 @@
 #pragma mark - 要在子类中设置table view frame
 -(UITableView *)tableView{
     if (!_tableView) {
-        _tableView = [[UITableView alloc] init];
+        _tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
         _tableView.delegate = self;
         _tableView.dataSource = self;
-        [_tableView setTableFooterView:[UIView new]];
     }
     return _tableView;
 }

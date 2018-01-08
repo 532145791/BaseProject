@@ -19,6 +19,20 @@ static NSInteger btnHeight = 44;
 -(void)viewDidLoad{
     [super viewDidLoad];
     self.view.backgroundColor = BackGround_Color;
+    if (@available(ios 11.0,*)) {
+        UIScrollView.appearance.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+        UITableView.appearance.estimatedRowHeight = 0;
+        UITableView.appearance.estimatedSectionFooterHeight = 0;
+        UITableView.appearance.estimatedSectionHeaderHeight = 0;
+    }
+    
+    if ([self respondsToSelector:@selector(automaticallyAdjustsScrollViewInsets)]) {
+        self.automaticallyAdjustsScrollViewInsets = NO;
+    }
+    
+    if ([self respondsToSelector:@selector(edgesForExtendedLayout)]) {
+        self.edgesForExtendedLayout = UIRectEdgeNone;
+    }
 }
 
 -(void)viewWillDisappear:(BOOL)animated{
@@ -51,10 +65,47 @@ static NSInteger btnHeight = 44;
     [leftBtn setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
     leftBtn.frame = CGRectMake(0, 0, btnWidth, btnHeight);
     [leftBtn addTarget:self action:@selector(touchLeftBtn) forControlEvents:UIControlEventTouchUpInside];
-    [leftBtn setImageEdgeInsets:UIEdgeInsetsMake(0, -20, 0, 20)];
+//    [leftBtn setImageEdgeInsets:UIEdgeInsetsMake(0, -20, 0, 20)];
     
     UIBarButtonItem *leftBar = [[UIBarButtonItem alloc] initWithCustomView:leftBtn];
     self.navigationItem.leftBarButtonItem = leftBar;
+}
+
+//右侧为文字item的情况
+- (void)addRightBarButtonItemWithTitle:(NSString *)itemTitle action:(SEL)action
+{
+    UIButton *rightbBarButton = [[UIButton alloc]initWithFrame:CGRectMake(0,0,88,44)];
+    [rightbBarButton setTitle:itemTitle forState:(UIControlStateNormal)];
+    [rightbBarButton setTitleColor:[UIColor whiteColor] forState:(UIControlStateNormal)];
+    rightbBarButton.titleLabel.font = [UIFont systemFontOfSize:14];
+    [rightbBarButton addTarget:self action:action forControlEvents:(UIControlEventTouchUpInside)];
+    if (System_Version >= 11) {
+        rightbBarButton.contentHorizontalAlignment =UIControlContentHorizontalAlignmentRight;
+        [rightbBarButton setTitleEdgeInsets:UIEdgeInsetsMake(0,0,0, -5)];
+    }
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:rightbBarButton];
+}
+
+//右侧一个图片按钮的情况
+- (void)addRightBarButtonWithImage:(UIImage *)firstImage action:(SEL)action
+{
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0,0,44,44)];
+    view.backgroundColor = [UIColor clearColor];
+    
+    UIButton *firstButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    firstButton.frame = CGRectMake(0, 0, 44, 44);
+    [firstButton setImage:firstImage forState:UIControlStateNormal];
+    [firstButton addTarget:self action:action forControlEvents:UIControlEventTouchUpInside];
+    
+    if (System_Version >= 11) {
+        firstButton.contentHorizontalAlignment =UIControlContentHorizontalAlignmentRight;
+        [firstButton setImageEdgeInsets:UIEdgeInsetsMake(0,0,0, -5)];
+    }
+    
+    UIBarButtonItem *rightBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:firstButton];
+    
+    self.navigationItem.rightBarButtonItem = rightBarButtonItem;
 }
 
 -(void)setNavigationBar{
@@ -69,9 +120,9 @@ static NSInteger btnHeight = 44;
 //    self.navigationController.view.backgroundColor = [UIColor whiteColor];
 }
 
-#pragma mark - 隐藏导航下面的那根线
--(void)hiddenNavigationShadowImage{
-    
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    [super touchesBegan:touches withEvent:event];
+    [self.view endEditing:YES];
 }
 
 #pragma mark - 点击左边按钮
@@ -84,20 +135,30 @@ static NSInteger btnHeight = 44;
     //在子类中实现
 }
 
-#pragma mark - 控制屏幕旋转方法
-//是否自动旋转,返回YES可以自动旋转,返回NO禁止旋转
-- (BOOL)shouldAutorotate{
-    return NO;
+-(void)basePushViewController:(UIViewController *)vc animated:(BOOL)animated{
+    if (self.navigationController.viewControllers.count == 1) {
+        vc.hidesBottomBarWhenPushed = YES;
+    }
+    [self.navigationController pushViewController:vc animated:animated];
 }
 
-//返回支持的方向
-- (UIInterfaceOrientationMask)supportedInterfaceOrientations{
-    return UIInterfaceOrientationMaskPortrait;
+- (void)popVC{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
-//由模态推出的视图控制器 优先支持的屏幕方向
-- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation{
-    return UIInterfaceOrientationPortrait;
+- (void)popToRoot{
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
+
+- (void)popToViewControllerAtIndex:(NSInteger)index{
+    if (self.navigationController.viewControllers.count > index) {
+        [self.navigationController popToViewController:[self.navigationController.viewControllers objectAtIndex:index] animated:YES];
+    }
+}
+
+- (void)dismissVC{
+    [self dismissViewControllerAnimated:YES completion:nil];
+    self.tabBarController.tabBar.hidden = NO;
 }
 
 @end

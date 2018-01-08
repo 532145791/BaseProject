@@ -7,7 +7,7 @@
 //
 
 #import "FirstViewController.h"
-
+#import "AutorotateViewController.h"
 @interface FirstViewController ()
 
 @end
@@ -19,15 +19,28 @@
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
     [self setNavigationWithTitle:@"第一"];
     //导航透明
-    self.navigationController.navigationBar.translucent = YES;
+//    self.navigationController.navigationBar.translucent = YES;
     //
-    self.automaticallyAdjustsScrollViewInsets = NO;
+//    self.automaticallyAdjustsScrollViewInsets=NO;
+    
     self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.tableView];
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.view);
     }];
     self.tableView.rowHeight = 45;
+    
+    UIButton *btn = [[UIButton alloc] init];
+    [btn setTitle:@"跳转" forState:UIControlStateNormal];
+    [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    btn.frame = CGRectMake(100, 200, 100, 50);
+    [self.view addSubview:btn];
+    [btn addTarget:self action:@selector(push) forControlEvents:UIControlEventTouchUpInside];
+}
+
+-(void)push{
+//    [self.navigationController pushViewController:[AutorotateViewController new] animated:YES];
+    [self basePushViewController:[AutorotateViewController new] animated:YES];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -47,8 +60,8 @@
  实现渐变
  */
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView{
-    float alpha = 1 - ((64 - scrollView.contentOffset.y) / 64);
-    [self setNavigationBarColor:[UIColor redColor] alpha:alpha];
+//    float alpha = 1 - ((64 - scrollView.contentOffset.y) / 64);
+//    [self setNavigationBarColor:[UIColor redColor] alpha:alpha];
 }
 
 @end
