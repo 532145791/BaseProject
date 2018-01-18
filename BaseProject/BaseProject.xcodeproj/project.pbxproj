@@ -197,10 +197,6 @@
 				4BE395681F580E8A00357883 /* Define */,
 				4B390E191F05EDB500E84522 /* ViewControllers */,
 				4B390E1A1F05EDCB00E84522 /* Tabbar */,
-				4B390E0A1F05ED5900E84522 /* Assets.xcassets */,
-				4B390E0C1F05ED5900E84522 /* LaunchScreen.storyboard */,
-				4B390E0F1F05ED5900E84522 /* Info.plist */,
-				4B390E1F1F05F1B100E84522 /* PrefixHeader.pch */,
 				4B390DFE1F05ED5900E84522 /* Supporting Files */,
 			);
 			path = BaseProject;
@@ -209,6 +205,10 @@
 		4B390DFE1F05ED5900E84522 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4B390E0A1F05ED5900E84522 /* Assets.xcassets */,
+				4B390E0C1F05ED5900E84522 /* LaunchScreen.storyboard */,
+				4B390E0F1F05ED5900E84522 /* Info.plist */,
+				4B390E1F1F05F1B100E84522 /* PrefixHeader.pch */,
 				4B390DFF1F05ED5900E84522 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -443,13 +443,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BaseProject-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		7EAF5E9B93E7E2B7A5D2372C /* [CP] Copy Pods Resources */ = {
@@ -458,9 +461,13 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BaseProject/Pods-BaseProject-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

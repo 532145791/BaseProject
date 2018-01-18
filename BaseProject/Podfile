@@ -7,4 +7,5 @@ pod 'Masonry'
 pod 'UICKeyChainStore', '~> 2.1.0'
 pod 'MLeaksFinder'
 pod 'YYKit'
+#pod 'Meiqia', '~> 3.4.3'
 end
