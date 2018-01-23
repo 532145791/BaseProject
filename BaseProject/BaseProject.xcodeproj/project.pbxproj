@@ -194,7 +194,6 @@
 				4B390E171F05EDB500E84522 /* NetWork */,
 				4B390E181F05EDB500E84522 /* Tools */,
 				4B390E1B1F05EE4C00E84522 /* Common */,
-				4BE395681F580E8A00357883 /* Define */,
 				4B390E191F05EDB500E84522 /* ViewControllers */,
 				4B390E1A1F05EDCB00E84522 /* Tabbar */,
 				4B390DFE1F05ED5900E84522 /* Supporting Files */,
@@ -348,13 +347,6 @@
 				4BE395691F58142100357883 /* XYTransition */,
 			);
 			path = Third;
-			sourceTree = "<group>";
-		};
-		4BE395681F580E8A00357883 /* Define */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Define;
 			sourceTree = "<group>";
 		};
 		4BE395691F58142100357883 /* XYTransition */ = {
