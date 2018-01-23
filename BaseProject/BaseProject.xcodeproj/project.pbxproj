@@ -47,6 +47,9 @@
 		4BD1BB051FD7DA3E0060281A /* BaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD1BB041FD7DA3E0060281A /* BaseNavigationViewController.m */; };
 		4BD1BB081FD7EF480060281A /* BaseTableWithGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD1BB071FD7EF480060281A /* BaseTableWithGroupViewController.m */; };
 		4BF1F60A1F42E795009C1DC4 /* UIViewController+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF1F6091F42E795009C1DC4 /* UIViewController+Extension.m */; };
+		BF30881D2016E10E005A8326 /* AppDelegate+AppService.m in Sources */ = {isa = PBXBuildFile; fileRef = BF30881C2016E10E005A8326 /* AppDelegate+AppService.m */; };
+		BF3088202016E125005A8326 /* AppDelegate+PushService.m in Sources */ = {isa = PBXBuildFile; fileRef = BF30881F2016E125005A8326 /* AppDelegate+PushService.m */; };
+		BF3088232016E138005A8326 /* AppDelegate+Jump.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3088222016E138005A8326 /* AppDelegate+Jump.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -131,6 +134,12 @@
 		4BF1F6091F42E795009C1DC4 /* UIViewController+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Extension.m"; sourceTree = "<group>"; };
 		5C13090DFCE1BF20BDF89CD7 /* Pods-BaseProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseProject/Pods-BaseProject.release.xcconfig"; sourceTree = "<group>"; };
 		A9F0DB2D046F17D6D6525298 /* Pods-BaseProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaseProject/Pods-BaseProject.debug.xcconfig"; sourceTree = "<group>"; };
+		BF30881B2016E10E005A8326 /* AppDelegate+AppService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+AppService.h"; sourceTree = "<group>"; };
+		BF30881C2016E10E005A8326 /* AppDelegate+AppService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+AppService.m"; sourceTree = "<group>"; };
+		BF30881E2016E125005A8326 /* AppDelegate+PushService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+PushService.h"; sourceTree = "<group>"; };
+		BF30881F2016E125005A8326 /* AppDelegate+PushService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+PushService.m"; sourceTree = "<group>"; };
+		BF3088212016E138005A8326 /* AppDelegate+Jump.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Jump.h"; sourceTree = "<group>"; };
+		BF3088222016E138005A8326 /* AppDelegate+Jump.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Jump.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -332,6 +341,12 @@
 			children = (
 				4B390E011F05ED5900E84522 /* AppDelegate.h */,
 				4B390E021F05ED5900E84522 /* AppDelegate.m */,
+				BF30881B2016E10E005A8326 /* AppDelegate+AppService.h */,
+				BF30881C2016E10E005A8326 /* AppDelegate+AppService.m */,
+				BF30881E2016E125005A8326 /* AppDelegate+PushService.h */,
+				BF30881F2016E125005A8326 /* AppDelegate+PushService.m */,
+				BF3088212016E138005A8326 /* AppDelegate+Jump.h */,
+				BF3088222016E138005A8326 /* AppDelegate+Jump.m */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -476,6 +491,7 @@
 				4B390E551F05FC8800E84522 /* SecondViewController.m in Sources */,
 				4BD1BB021FD7D85D0060281A /* AutorotateViewController.m in Sources */,
 				4B390E5E1F05FE3900E84522 /* UIView+Additions.m in Sources */,
+				BF30881D2016E10E005A8326 /* AppDelegate+AppService.m in Sources */,
 				4B390E2B1F05F2DD00E84522 /* MD5Tool.m in Sources */,
 				4B390E371F05F47000E84522 /* CommonTool.m in Sources */,
 				4BB40F671F306AC30028E404 /* BaseTableViewController.m in Sources */,
@@ -485,9 +501,11 @@
 				4B390E491F05FB2600E84522 /* LCProgressHUD.m in Sources */,
 				4B390E521F05FC7C00E84522 /* FirstViewController.m in Sources */,
 				4B390E341F05F45500E84522 /* TMDResponseSerializer.m in Sources */,
+				BF3088202016E125005A8326 /* AppDelegate+PushService.m in Sources */,
 				4B390E461F05F6C100E84522 /* GlobalVariables.m in Sources */,
 				4B390E321F05F45500E84522 /* HttpTool.m in Sources */,
 				4B5030161F42DE5A004FA2B0 /* UIImage+Extension.m in Sources */,
+				BF3088232016E138005A8326 /* AppDelegate+Jump.m in Sources */,
 				4BD1BB081FD7EF480060281A /* BaseTableWithGroupViewController.m in Sources */,
 				4B390E221F05F1FF00E84522 /* SVProgressHUD+Extend.m in Sources */,
 				4BD1BA011FB2D4BB0060281A /* UIControl+NoRepeat.m in Sources */,
