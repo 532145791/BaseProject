@@ -10,7 +10,7 @@
 
 @interface NSString (Emoji)
 /**
- *  将十六进制的编码转为emoji字符
+ *  将十六进制的编码转为 emoji 字符
  */
 + (NSString *)emojiWithIntCode:(int)intCode;
 
