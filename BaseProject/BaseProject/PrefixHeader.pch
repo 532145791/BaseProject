@@ -17,10 +17,19 @@
 #define Adapt_Height(x) ((x) * [UIScreen mainScreen].bounds.size.height / 667.0)
 #define System_Version [[[UIDevice currentDevice] systemVersion] floatValue]
 #define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
-#define ViewTitleSize 17
-#define NavigationLeftOrRightItemFont 15
 #define WhiteBackImage @"nav-white-back"
 #define BlackBackImage @"nav-black-back"
+
+//适配iPhone X
+//是否为X
+#define IPHONE_X ((Screen_Width==375&&Screen_Height==812)? YES : NO)
+//底部距离
+#define Home_Indicator (IPHONE_X ? 34 : 0 )
+//导航栏高度
+#define KNavigationBar_HEIGHT (IPHONE_X ? 88 : 64 )
+//顶部距离（关闭、返回按钮等）增加20px
+#define k20HEIGHT(x) (IPHONE_X ? (x)+20 : (x) )
+
 //字体
 #define Font_PingFang_Regular   @"PingFangSC-Regular"
 #define Font_PingFang_Light     @"PingFangSC-Light"
