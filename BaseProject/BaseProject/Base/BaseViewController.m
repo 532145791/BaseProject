@@ -65,7 +65,6 @@ static NSInteger btnHeight = 44;
     [leftBtn setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
     leftBtn.frame = CGRectMake(0, 0, btnWidth, btnHeight);
     [leftBtn addTarget:self action:@selector(touchLeftBtn) forControlEvents:UIControlEventTouchUpInside];
-//    [leftBtn setImageEdgeInsets:UIEdgeInsetsMake(0, -20, 0, 20)];
     
     UIBarButtonItem *leftBar = [[UIBarButtonItem alloc] initWithCustomView:leftBtn];
     self.navigationItem.leftBarButtonItem = leftBar;
