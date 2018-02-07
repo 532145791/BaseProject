@@ -58,6 +58,7 @@
 #import "UIImage+Extension.h"
 #import "UIViewController+Extension.h"
 #import "UIControl+NoRepeat.h"
+#import "NSObject+Extend.h"
 //common
 #import "Notification.h"
 #import "GlobalVariables.h"

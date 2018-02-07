@@ -50,6 +50,7 @@
 		BF30881D2016E10E005A8326 /* AppDelegate+AppService.m in Sources */ = {isa = PBXBuildFile; fileRef = BF30881C2016E10E005A8326 /* AppDelegate+AppService.m */; };
 		BF3088202016E125005A8326 /* AppDelegate+PushService.m in Sources */ = {isa = PBXBuildFile; fileRef = BF30881F2016E125005A8326 /* AppDelegate+PushService.m */; };
 		BF3088232016E138005A8326 /* AppDelegate+Jump.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3088222016E138005A8326 /* AppDelegate+Jump.m */; };
+		BFF133032029B37D002A3BAE /* NSObject+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF133022029B37D002A3BAE /* NSObject+Extend.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -140,6 +141,8 @@
 		BF30881F2016E125005A8326 /* AppDelegate+PushService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+PushService.m"; sourceTree = "<group>"; };
 		BF3088212016E138005A8326 /* AppDelegate+Jump.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Jump.h"; sourceTree = "<group>"; };
 		BF3088222016E138005A8326 /* AppDelegate+Jump.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Jump.m"; sourceTree = "<group>"; };
+		BFF133012029B37D002A3BAE /* NSObject+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Extend.h"; sourceTree = "<group>"; };
+		BFF133022029B37D002A3BAE /* NSObject+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Extend.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,6 +244,8 @@
 		4B390E161F05EDB500E84522 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				BFF133012029B37D002A3BAE /* NSObject+Extend.h */,
+				BFF133022029B37D002A3BAE /* NSObject+Extend.m */,
 				4B479935200318A600DA815A /* UITextView+Extension.h */,
 				4B479936200318A600DA815A /* UITextView+Extension.m */,
 				4B8ACC3A1F2F60690020B0F9 /* NSString+Emoji.h */,
@@ -495,6 +500,7 @@
 				4B390E2B1F05F2DD00E84522 /* MD5Tool.m in Sources */,
 				4B390E371F05F47000E84522 /* CommonTool.m in Sources */,
 				4BB40F671F306AC30028E404 /* BaseTableViewController.m in Sources */,
+				BFF133032029B37D002A3BAE /* NSObject+Extend.m in Sources */,
 				4B8ACC3F1F2F62960020B0F9 /* LCSegmentedControl.m in Sources */,
 				4BD1BB051FD7DA3E0060281A /* BaseNavigationViewController.m in Sources */,
 				4B25BF461F4D59FA00B4A2C4 /* CropImage.m in Sources */,
