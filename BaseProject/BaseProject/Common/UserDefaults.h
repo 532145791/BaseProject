@@ -15,6 +15,5 @@
 +(void)saveDataWithMyID:(NSString*)key value:(id)value;
 +(id)getDataWithMyID:(NSString*)key;
 +(void)removeWithMyID:(NSString*)key;
-+(void)synchronizeUserDefaults;
 +(void)cleanCache;
 @end

@@ -22,10 +22,10 @@ NSUserDefaults *userDefaults;
         if (![keys containsObject:key]) {
             [keys addObject:key];
         }
-        
     }
     [userDefaults setObject:keys forKey:@"keys"];
     [userDefaults setObject:value forKey:key];
+    [userDefaults synchronize];
 }
 
 +(void)saveDataWithMyID:(NSString *)key value:(id)value{
@@ -50,6 +50,7 @@ NSUserDefaults *userDefaults;
         userDefaults=[[NSUserDefaults alloc]initWithSuiteName:[CommonTool displayName]];
     }
     [userDefaults removeObjectForKey:key];
+    [userDefaults synchronize];
 }
 
 +(void)removeWithMyID:(NSString *)key{
@@ -58,12 +59,7 @@ NSUserDefaults *userDefaults;
     }
     NSString *newKey=[NSString stringWithFormat:@"%@_%@",key,MyID];
     [userDefaults removeObjectForKey:newKey];
-}
-
-+(void)synchronizeUserDefaults{
-    if (![CommonTool isNull:userDefaults]) {
-        [userDefaults synchronize];
-    }
+    [userDefaults synchronize];
 }
 
 +(void)cleanCache{
@@ -80,5 +76,6 @@ NSUserDefaults *userDefaults;
         }
         [userDefaults setObject:keys forKey:@"keys"];
     }
+    [userDefaults synchronize];
 }
 @end

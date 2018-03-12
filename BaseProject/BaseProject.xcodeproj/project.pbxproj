@@ -51,6 +51,8 @@
 		BF3088202016E125005A8326 /* AppDelegate+PushService.m in Sources */ = {isa = PBXBuildFile; fileRef = BF30881F2016E125005A8326 /* AppDelegate+PushService.m */; };
 		BF3088232016E138005A8326 /* AppDelegate+Jump.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3088222016E138005A8326 /* AppDelegate+Jump.m */; };
 		BFF133032029B37D002A3BAE /* NSObject+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF133022029B37D002A3BAE /* NSObject+Extend.m */; };
+		BFF1330B202ADCC4002A3BAE /* UserInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF13309202ADCC4002A3BAE /* UserInfoModel.m */; };
+		BFF1330C202ADCC4002A3BAE /* UserInfoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF1330A202ADCC4002A3BAE /* UserInfoManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -143,6 +145,10 @@
 		BF3088222016E138005A8326 /* AppDelegate+Jump.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Jump.m"; sourceTree = "<group>"; };
 		BFF133012029B37D002A3BAE /* NSObject+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Extend.h"; sourceTree = "<group>"; };
 		BFF133022029B37D002A3BAE /* NSObject+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Extend.m"; sourceTree = "<group>"; };
+		BFF13307202ADCC4002A3BAE /* UserInfoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoManager.h; sourceTree = "<group>"; };
+		BFF13308202ADCC4002A3BAE /* UserInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoModel.h; sourceTree = "<group>"; };
+		BFF13309202ADCC4002A3BAE /* UserInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoModel.m; sourceTree = "<group>"; };
+		BFF1330A202ADCC4002A3BAE /* UserInfoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +201,7 @@
 		4B390DFD1F05ED5900E84522 /* BaseProject */ = {
 			isa = PBXGroup;
 			children = (
+				BFF13306202ADCAC002A3BAE /* UserInfoManager */,
 				4B47993820031C5400DA815A /* AppDelegate */,
 				4B390E151F05EDB500E84522 /* Base */,
 				4B390E161F05EDB500E84522 /* Category */,
@@ -356,6 +363,17 @@
 			path = AppDelegate;
 			sourceTree = "<group>";
 		};
+		BFF13306202ADCAC002A3BAE /* UserInfoManager */ = {
+			isa = PBXGroup;
+			children = (
+				BFF13307202ADCC4002A3BAE /* UserInfoManager.h */,
+				BFF1330A202ADCC4002A3BAE /* UserInfoManager.m */,
+				BFF13308202ADCC4002A3BAE /* UserInfoModel.h */,
+				BFF13309202ADCC4002A3BAE /* UserInfoModel.m */,
+			);
+			path = UserInfoManager;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -494,6 +512,7 @@
 				4B390E5D1F05FE3900E84522 /* UIView+Extension.m in Sources */,
 				4B390E431F05F69A00E84522 /* UserDefaults.m in Sources */,
 				4B390E551F05FC8800E84522 /* SecondViewController.m in Sources */,
+				BFF1330B202ADCC4002A3BAE /* UserInfoModel.m in Sources */,
 				4BD1BB021FD7D85D0060281A /* AutorotateViewController.m in Sources */,
 				4B390E5E1F05FE3900E84522 /* UIView+Additions.m in Sources */,
 				BF30881D2016E10E005A8326 /* AppDelegate+AppService.m in Sources */,
@@ -513,6 +532,7 @@
 				4B5030161F42DE5A004FA2B0 /* UIImage+Extension.m in Sources */,
 				BF3088232016E138005A8326 /* AppDelegate+Jump.m in Sources */,
 				4BD1BB081FD7EF480060281A /* BaseTableWithGroupViewController.m in Sources */,
+				BFF1330C202ADCC4002A3BAE /* UserInfoManager.m in Sources */,
 				4B390E221F05F1FF00E84522 /* SVProgressHUD+Extend.m in Sources */,
 				4BD1BA011FB2D4BB0060281A /* UIControl+NoRepeat.m in Sources */,
 				4BF1F60A1F42E795009C1DC4 /* UIViewController+Extension.m in Sources */,

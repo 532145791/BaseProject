@@ -160,4 +160,12 @@ static NSInteger btnHeight = 44;
     self.tabBarController.tabBar.hidden = NO;
 }
 
+-(BOOL)isLogin{
+    return YES;
+}
+
+-(void)goLogin{
+    
+}
+
 @end

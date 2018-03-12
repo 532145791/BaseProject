@@ -65,4 +65,14 @@
  *  pop页面
  */
 - (void)popVC;
+
+/**
+ *  判断用户是否已经登录
+ */
+- (BOOL)isLogin;
+
+/**
+ *  前往登录界面
+ */
+- (void)goLogin;
 @end

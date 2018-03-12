@@ -63,5 +63,6 @@
 #import "Notification.h"
 #import "GlobalVariables.h"
 #import "AppDelegate.h"
+#import "UserInfoManager.h"
 #define BaseUrl @""
 #endif /* PrefixHeader_pch */
