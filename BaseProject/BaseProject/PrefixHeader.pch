@@ -38,8 +38,6 @@
 
 //第三方
 #import <MJRefresh/MJRefresh.h>
-#import <UIImageView+WebCache.h>
-#import <SDWebImage/SDImageCache.h>
 #import <Masonry.h>
 #import <YYKit.h>
 //工具类
@@ -59,6 +57,7 @@
 #import "UIViewController+Extension.h"
 #import "UIControl+NoRepeat.h"
 #import "NSObject+Extend.h"
+#import "UIView+Masonry.h"
 //common
 #import "Notification.h"
 #import "GlobalVariables.h"

@@ -8,7 +8,6 @@
 
 #import "HttpTool.h"
 #import <AFNetworking.h>
-#import "TMDRequestSerializer.h"
 #import "Reachability.h"
 static AFHTTPSessionManager *manager;
 static NSTimeInterval kTimeoutInterval = 30;
@@ -18,7 +17,7 @@ static NSTimeInterval kTimeoutInterval = 30;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         manager = [AFHTTPSessionManager manager];
-        manager.requestSerializer = [TMDRequestSerializer serializer];
+        manager.requestSerializer = [AFJSONRequestSerializer serializer];
         manager.requestSerializer.timeoutInterval = kTimeoutInterval;
         manager.responseSerializer = [AFJSONResponseSerializer serializer];
         ((AFJSONResponseSerializer *)manager.responseSerializer).removesKeysWithNullValues = YES;

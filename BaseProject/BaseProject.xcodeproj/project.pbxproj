@@ -17,8 +17,6 @@
 		4B390E221F05F1FF00E84522 /* SVProgressHUD+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B390E211F05F1FF00E84522 /* SVProgressHUD+Extend.m */; };
 		4B390E2B1F05F2DD00E84522 /* MD5Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B390E2A1F05F2DD00E84522 /* MD5Tool.m */; };
 		4B390E321F05F45500E84522 /* HttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B390E2D1F05F45500E84522 /* HttpTool.m */; };
-		4B390E331F05F45500E84522 /* TMDRequestSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B390E2F1F05F45500E84522 /* TMDRequestSerializer.m */; };
-		4B390E341F05F45500E84522 /* TMDResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B390E311F05F45500E84522 /* TMDResponseSerializer.m */; };
 		4B390E371F05F47000E84522 /* CommonTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B390E361F05F47000E84522 /* CommonTool.m */; };
 		4B390E3A1F05F59400E84522 /* ClearCacheTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B390E391F05F59400E84522 /* ClearCacheTool.m */; };
 		4B390E3D1F05F62100E84522 /* Notification.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B390E3C1F05F62100E84522 /* Notification.m */; };
@@ -47,6 +45,7 @@
 		4BD1BB051FD7DA3E0060281A /* BaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD1BB041FD7DA3E0060281A /* BaseNavigationViewController.m */; };
 		4BD1BB081FD7EF480060281A /* BaseTableWithGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD1BB071FD7EF480060281A /* BaseTableWithGroupViewController.m */; };
 		4BF1F60A1F42E795009C1DC4 /* UIViewController+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF1F6091F42E795009C1DC4 /* UIViewController+Extension.m */; };
+		BF04545B20735BA000E3074F /* UIView+Masonry.m in Sources */ = {isa = PBXBuildFile; fileRef = BF04545A20735BA000E3074F /* UIView+Masonry.m */; };
 		BF30881D2016E10E005A8326 /* AppDelegate+AppService.m in Sources */ = {isa = PBXBuildFile; fileRef = BF30881C2016E10E005A8326 /* AppDelegate+AppService.m */; };
 		BF3088202016E125005A8326 /* AppDelegate+PushService.m in Sources */ = {isa = PBXBuildFile; fileRef = BF30881F2016E125005A8326 /* AppDelegate+PushService.m */; };
 		BF3088232016E138005A8326 /* AppDelegate+Jump.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3088222016E138005A8326 /* AppDelegate+Jump.m */; };
@@ -75,10 +74,6 @@
 		4B390E2A1F05F2DD00E84522 /* MD5Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MD5Tool.m; sourceTree = "<group>"; };
 		4B390E2C1F05F45500E84522 /* HttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpTool.h; sourceTree = "<group>"; };
 		4B390E2D1F05F45500E84522 /* HttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpTool.m; sourceTree = "<group>"; };
-		4B390E2E1F05F45500E84522 /* TMDRequestSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMDRequestSerializer.h; sourceTree = "<group>"; };
-		4B390E2F1F05F45500E84522 /* TMDRequestSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMDRequestSerializer.m; sourceTree = "<group>"; };
-		4B390E301F05F45500E84522 /* TMDResponseSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMDResponseSerializer.h; sourceTree = "<group>"; };
-		4B390E311F05F45500E84522 /* TMDResponseSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMDResponseSerializer.m; sourceTree = "<group>"; };
 		4B390E351F05F47000E84522 /* CommonTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonTool.h; sourceTree = "<group>"; };
 		4B390E361F05F47000E84522 /* CommonTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonTool.m; sourceTree = "<group>"; };
 		4B390E381F05F59400E84522 /* ClearCacheTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClearCacheTool.h; sourceTree = "<group>"; };
@@ -137,6 +132,8 @@
 		4BF1F6091F42E795009C1DC4 /* UIViewController+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Extension.m"; sourceTree = "<group>"; };
 		5C13090DFCE1BF20BDF89CD7 /* Pods-BaseProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseProject/Pods-BaseProject.release.xcconfig"; sourceTree = "<group>"; };
 		A9F0DB2D046F17D6D6525298 /* Pods-BaseProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaseProject/Pods-BaseProject.debug.xcconfig"; sourceTree = "<group>"; };
+		BF04545920735BA000E3074F /* UIView+Masonry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Masonry.h"; sourceTree = "<group>"; };
+		BF04545A20735BA000E3074F /* UIView+Masonry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Masonry.m"; sourceTree = "<group>"; };
 		BF30881B2016E10E005A8326 /* AppDelegate+AppService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+AppService.h"; sourceTree = "<group>"; };
 		BF30881C2016E10E005A8326 /* AppDelegate+AppService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+AppService.m"; sourceTree = "<group>"; };
 		BF30881E2016E125005A8326 /* AppDelegate+PushService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+PushService.h"; sourceTree = "<group>"; };
@@ -201,13 +198,14 @@
 		4B390DFD1F05ED5900E84522 /* BaseProject */ = {
 			isa = PBXGroup;
 			children = (
-				BFF13306202ADCAC002A3BAE /* UserInfoManager */,
 				4B47993820031C5400DA815A /* AppDelegate */,
+				BFF13306202ADCAC002A3BAE /* UserInfoManager */,
 				4B390E151F05EDB500E84522 /* Base */,
 				4B390E161F05EDB500E84522 /* Category */,
-				4B390E171F05EDB500E84522 /* NetWork */,
+				4B390E171F05EDB500E84522 /* Network */,
 				4B390E181F05EDB500E84522 /* Tools */,
 				4B390E1B1F05EE4C00E84522 /* Common */,
+				BFFD963220785FC800928F81 /* ViewModel */,
 				4B390E191F05EDB500E84522 /* ViewControllers */,
 				4B390E1A1F05EDCB00E84522 /* Tabbar */,
 				4B390DFE1F05ED5900E84522 /* Supporting Files */,
@@ -273,23 +271,21 @@
 				4BF1F6091F42E795009C1DC4 /* UIViewController+Extension.m */,
 				4BD1B9FF1FB2D4BA0060281A /* UIControl+NoRepeat.h */,
 				4BD1BA001FB2D4BB0060281A /* UIControl+NoRepeat.m */,
+				BF04545920735BA000E3074F /* UIView+Masonry.h */,
+				BF04545A20735BA000E3074F /* UIView+Masonry.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
 		};
-		4B390E171F05EDB500E84522 /* NetWork */ = {
+		4B390E171F05EDB500E84522 /* Network */ = {
 			isa = PBXGroup;
 			children = (
 				4BD1BA081FB30FF80060281A /* Reachability.h */,
 				4BD1BA091FB30FF80060281A /* Reachability.m */,
 				4B390E2C1F05F45500E84522 /* HttpTool.h */,
 				4B390E2D1F05F45500E84522 /* HttpTool.m */,
-				4B390E2E1F05F45500E84522 /* TMDRequestSerializer.h */,
-				4B390E2F1F05F45500E84522 /* TMDRequestSerializer.m */,
-				4B390E301F05F45500E84522 /* TMDResponseSerializer.h */,
-				4B390E311F05F45500E84522 /* TMDResponseSerializer.m */,
 			);
-			path = NetWork;
+			path = Network;
 			sourceTree = "<group>";
 		};
 		4B390E181F05EDB500E84522 /* Tools */ = {
@@ -374,6 +370,13 @@
 			path = UserInfoManager;
 			sourceTree = "<group>";
 		};
+		BFFD963220785FC800928F81 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -408,7 +411,7 @@
 				TargetAttributes = {
 					4B390DFA1F05ED5900E84522 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = FBCB5X99HB;
+						DevelopmentTeam = XH3LM55UB7;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -512,6 +515,7 @@
 				4B390E5D1F05FE3900E84522 /* UIView+Extension.m in Sources */,
 				4B390E431F05F69A00E84522 /* UserDefaults.m in Sources */,
 				4B390E551F05FC8800E84522 /* SecondViewController.m in Sources */,
+				BF04545B20735BA000E3074F /* UIView+Masonry.m in Sources */,
 				BFF1330B202ADCC4002A3BAE /* UserInfoModel.m in Sources */,
 				4BD1BB021FD7D85D0060281A /* AutorotateViewController.m in Sources */,
 				4B390E5E1F05FE3900E84522 /* UIView+Additions.m in Sources */,
@@ -525,7 +529,6 @@
 				4B25BF461F4D59FA00B4A2C4 /* CropImage.m in Sources */,
 				4B390E491F05FB2600E84522 /* LCProgressHUD.m in Sources */,
 				4B390E521F05FC7C00E84522 /* FirstViewController.m in Sources */,
-				4B390E341F05F45500E84522 /* TMDResponseSerializer.m in Sources */,
 				BF3088202016E125005A8326 /* AppDelegate+PushService.m in Sources */,
 				4B390E461F05F6C100E84522 /* GlobalVariables.m in Sources */,
 				4B390E321F05F45500E84522 /* HttpTool.m in Sources */,
@@ -536,7 +539,6 @@
 				4B390E221F05F1FF00E84522 /* SVProgressHUD+Extend.m in Sources */,
 				4BD1BA011FB2D4BB0060281A /* UIControl+NoRepeat.m in Sources */,
 				4BF1F60A1F42E795009C1DC4 /* UIViewController+Extension.m in Sources */,
-				4B390E331F05F45500E84522 /* TMDRequestSerializer.m in Sources */,
 				4BD1BA0A1FB30FF80060281A /* Reachability.m in Sources */,
 				4BB40F6D1F3074130028E404 /* BaseScrollViewController.m in Sources */,
 				4B390E3D1F05F62100E84522 /* Notification.m in Sources */,
@@ -671,7 +673,7 @@
 			baseConfigurationReference = A9F0DB2D046F17D6D6525298 /* Pods-BaseProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = FBCB5X99HB;
+				DEVELOPMENT_TEAM = XH3LM55UB7;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/BaseProject/PrefixHeader.pch";
 				INFOPLIST_FILE = BaseProject/Info.plist;
@@ -690,7 +692,7 @@
 			baseConfigurationReference = 5C13090DFCE1BF20BDF89CD7 /* Pods-BaseProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = FBCB5X99HB;
+				DEVELOPMENT_TEAM = XH3LM55UB7;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/BaseProject/PrefixHeader.pch";
 				INFOPLIST_FILE = BaseProject/Info.plist;

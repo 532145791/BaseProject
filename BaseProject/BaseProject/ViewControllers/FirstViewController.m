@@ -9,7 +9,6 @@
 #import "FirstViewController.h"
 #import "AutorotateViewController.h"
 @interface FirstViewController ()
-
 @end
 
 @implementation FirstViewController
@@ -39,7 +38,6 @@
 }
 
 -(void)push{
-//    [self.navigationController pushViewController:[AutorotateViewController new] animated:YES];
     [self basePushViewController:[AutorotateViewController new] animated:YES];
 }
 
