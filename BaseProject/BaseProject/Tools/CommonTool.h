@@ -42,11 +42,6 @@
 + (NSString *)language;
 + (NSString *)uuid;
 + (NSString *)displayName;
-+ (NSString *)getToken;
-+ (NSString *)getSecret;
-+ (void)clearTokenSecret;
-+ (void)updateAccessToken:(NSString *)token;
-+ (void)updateSecretkey:(NSString *)secretKey;
 //判空
 +(BOOL)isNull:(id)object;
 //计算字符串的高度

@@ -5,19 +5,21 @@
 @implementation ClearCacheTool
 
 + (NSString *)getCacheSize {
-    
-    NSUInteger intg = [[SDImageCache sharedImageCache] getSize];
+    NSUInteger intg = 0;
+    YYDiskCache *diskCache = [YYImageCache sharedCache].diskCache;
+    YYMemoryCache *memoryCache = [YYImageCache sharedCache].memoryCache;
+    intg = diskCache.totalCost + memoryCache.totalCost;
     NSString * currentVolum = [NSString stringWithFormat:@"%@",[self fileSizeWithInterge:intg]];
     return  currentVolum;
 }
 
 #pragma mark 清理缓存
 + (void)clearCacheCompletion:(void (^)(id json))success {
-    [[SDImageCache sharedImageCache] clearDiskOnCompletion:^{
-        if (success) {
-            success(@"finish");
-        }
-    }];
+    [[YYImageCache sharedCache].memoryCache removeAllObjects];
+    [[YYImageCache sharedCache].diskCache removeAllObjects];
+    if (success) {
+        success(@"finish");
+    }
 }
 
 + (NSString *)fileSizeWithInterge:(NSInteger)size{

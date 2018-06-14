@@ -8,7 +8,6 @@
 
 #import "CommonTool.h"
 #import <CoreTelephony/CTTelephonyNetworkInfo.h>
-#import <UICKeyChainStore/UICKeyChainStore.h>
 @implementation CommonTool
 + (NSString *)networkType {
     NSString *netconnType = @"";
@@ -92,31 +91,6 @@
 
 +(NSString *)displayName{
     return [[NSBundle mainBundle] infoDictionary][@"CFBundleDisplayName"];
-}
-
-+ (NSString *)getToken {
-    UICKeyChainStore *keychain = [UICKeyChainStore keyChainStoreWithService:@"com.innersect.app"];
-    return [keychain stringForKey:@"token"] ?: @"";
-}
-
-+ (NSString *)getSecret {
-    UICKeyChainStore *keychain = [UICKeyChainStore keyChainStoreWithService:@"com.innersect.app"];
-    return  [keychain stringForKey:@"secret"] ?: @"";
-}
-
-+ (void)clearTokenSecret {
-    [CommonTool updateSecretkey:nil];
-    [CommonTool updateAccessToken:nil];
-}
-
-+ (void)updateAccessToken:(NSString *_Nullable)token {
-    UICKeyChainStore *keychain = [UICKeyChainStore keyChainStoreWithService:@"com.innersect.app"];
-    [keychain setString:token forKey:@"token"];
-}
-
-+ (void)updateSecretkey:(NSString *_Nullable)secretKey {
-    UICKeyChainStore *keychain = [UICKeyChainStore keyChainStoreWithService:@"com.innersect.app"];
-    [keychain setString:secretKey forKey:@"secret"];
 }
 
 +(BOOL)isNull:(id)object{
