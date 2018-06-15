@@ -17,6 +17,6 @@
 }
 
 -(void)setUpBugly{
-    [Bugly startWithAppId:Bugly_AppId];
+    [Bugly startWithAppId:@""];
 }
 @end

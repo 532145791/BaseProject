@@ -18,8 +18,6 @@
 
 @implementation TabBarViewController
 
-
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setTabbarView];
