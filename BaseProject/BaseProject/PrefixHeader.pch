@@ -40,6 +40,7 @@
 #import <MJRefresh/MJRefresh.h>
 #import <Masonry.h>
 #import <YYKit.h>
+#define Bugly_AppId @""
 //工具类
 #import "MD5Tool.h"
 #import "CommonTool.h"

@@ -14,27 +14,51 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - Bugly (2.5.0)
   - Masonry (1.0.2)
   - MJRefresh (3.1.12)
   - SVProgressHUD (2.1.2)
+  - UMCAnalytics (5.4.1):
+    - UMCCommon
+  - UMCCommon (1.4.1)
+  - UMCSecurityPlugins (1.0.6)
+  - UMCShare/Core (6.8.1):
+    - UMCCommon
+  - UMCShare/Social/ReducedQQ (6.8.1):
+    - UMCCommon
+    - UMCShare/Core
+  - UMCShare/Social/ReducedWeChat (6.8.1):
+    - UMCCommon
+    - UMCShare/Core
   - YYKit (1.0.9):
     - YYKit/no-arc (= 1.0.9)
   - YYKit/no-arc (1.0.9)
 
 DEPENDENCIES:
   - AFNetworking
+  - Bugly
   - Masonry
   - MJRefresh
   - SVProgressHUD
+  - UMCAnalytics
+  - UMCCommon
+  - UMCSecurityPlugins
+  - UMCShare/Social/ReducedQQ
+  - UMCShare/Social/ReducedWeChat
   - YYKit
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  Bugly: 3ca9f255c01025582df26f9222893b383c7e4b4e
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
+  UMCAnalytics: 44e0bb2f442b7aaf97d1c924b58798b612f2c13d
+  UMCCommon: ed0b882a939c45850f6803a5837698572a3e9b96
+  UMCSecurityPlugins: 0831a08f3988f3cea9f1d3a7626cd9bee4fef150
+  UMCShare: d63008fcea9b2e1e52bc62816b1611ee7d5af50e
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: aa1526ff5b4e53c1bac9542d6b683f702f184b42
+PODFILE CHECKSUM: 2a4c2f887e6f9f6aaf13b7392ffe838ae061176e
 
 COCOAPODS: 1.4.0

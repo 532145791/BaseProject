@@ -24,6 +24,11 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
+## Bugly
+
+Copyright (C) 2017 Tencent Bugly, Inc. All rights reserved.
+
+
 ## MJRefresh
 
 Copyright (c) 2013-2015 MJRefresh (https://github.com/CoderMJLee/MJRefresh)
@@ -97,6 +102,26 @@ OTHER DEALINGS IN THE SOFTWARE.
 A different license may apply to other resources included in this package, 
 including Freepik Icons. Please consult their 
 respective headers for the terms of their individual licenses.
+
+
+## UMCAnalytics
+
+Copyright 2011 - 2018 umeng.com. All rights reserved.
+
+
+## UMCCommon
+
+Copyright 2011 - 2018 umeng.com. All rights reserved.
+
+
+## UMCSecurityPlugins
+
+Copyright 2011 - 2018 umeng.com. All rights reserved.
+
+
+## UMCShare
+
+Copyright 2011 - 2018 umeng.com. All rights reserved.
 
 
 ## YYKit

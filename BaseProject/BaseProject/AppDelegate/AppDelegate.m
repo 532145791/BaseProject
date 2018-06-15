@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "AppDelegate+AppService.h"
 @interface AppDelegate ()
 
 @end
@@ -20,6 +20,8 @@
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [self setUpHUDStyle];
+    [self setUpBugly];
     self.tabbar = [[TabBarViewController alloc] init];
     self.window.rootViewController = self.tabbar;
     [self.window makeKeyAndVisible];

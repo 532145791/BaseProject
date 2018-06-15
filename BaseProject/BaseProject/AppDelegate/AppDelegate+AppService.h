@@ -9,5 +9,13 @@
 #import "AppDelegate.h"
 
 @interface AppDelegate (AppService)
+/**
+ 设置HUD风格
+ */
+-(void)setUpHUDStyle;
 
+/**
+ 集成bugly
+ */
+-(void)setUpBugly;
 @end

@@ -4,4 +4,17 @@ pod 'MJRefresh'
 pod 'AFNetworking'
 pod 'Masonry'
 pod 'YYKit'
+
+#bug统计
+pod 'Bugly'
+
+#友盟
+#基础库
+pod 'UMCCommon'
+pod 'UMCSecurityPlugins'
+#统计
+pod 'UMCAnalytics'
+#分享
+pod 'UMCShare/Social/ReducedWeChat'
+pod 'UMCShare/Social/ReducedQQ'
 end
