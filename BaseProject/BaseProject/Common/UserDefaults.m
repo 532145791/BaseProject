@@ -28,11 +28,6 @@ NSUserDefaults *userDefaults;
     [userDefaults synchronize];
 }
 
-+(void)saveDataWithMyID:(NSString *)key value:(id)value{
-    NSString *newKey=[NSString stringWithFormat:@"%@_%@",key,MyID];
-    [UserDefaults saveDataWithKey:newKey value:value];
-}
-
 +(id)getDataWithKey:(NSString *)key{
     if ([CommonTool isNull:userDefaults]) {
         userDefaults=[[NSUserDefaults alloc]initWithSuiteName:[CommonTool displayName]];
@@ -40,25 +35,11 @@ NSUserDefaults *userDefaults;
     return [userDefaults objectForKey:key];
 }
 
-+(id)getDataWithMyID:(NSString *)key{
-    NSString *newKey=[NSString stringWithFormat:@"%@_%@",key,MyID];
-    return [UserDefaults getDataWithKey:newKey];
-}
-
 +(void)removeWithKey:(NSString *)key{
     if ([CommonTool isNull:userDefaults]) {
         userDefaults=[[NSUserDefaults alloc]initWithSuiteName:[CommonTool displayName]];
     }
     [userDefaults removeObjectForKey:key];
-    [userDefaults synchronize];
-}
-
-+(void)removeWithMyID:(NSString *)key{
-    if ([CommonTool isNull:userDefaults]) {
-        userDefaults=[[NSUserDefaults alloc]initWithSuiteName:[CommonTool displayName]];
-    }
-    NSString *newKey=[NSString stringWithFormat:@"%@_%@",key,MyID];
-    [userDefaults removeObjectForKey:newKey];
     [userDefaults synchronize];
 }
 

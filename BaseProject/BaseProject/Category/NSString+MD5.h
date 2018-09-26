@@ -1,14 +1,14 @@
 //
-//  MD5Tool.h
+//  NSString+MD5.h
 //  BaseProject
 //
-//  Created by 冷超 on 2017/6/30.
-//  Copyright © 2017年 lengchao. All rights reserved.
+//  Created by super on 2018/9/26.
+//  Copyright © 2018年 lengchao. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-@interface MD5Tool : NSObject
+@interface NSString (MD5)
 /**
  *  MD5加密, 32位 小写
  *

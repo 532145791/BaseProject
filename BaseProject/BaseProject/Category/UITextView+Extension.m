@@ -49,14 +49,6 @@
 }
 
 - (void)setPlaceholderWithText:(NSString *)text Color:(UIColor *)color{
-    //多余 强指针换了指向以后label自动销毁
-    //防止重复设置 cell复用等问题
-    //    for (UIView *view in self.subviews) {
-    //        if ([view isKindOfClass:[UILabel class]]) {
-    //            [view removeFromSuperview];
-    //        }
-    //    }
-    
     //设置占位label
     UILabel *label = [[UILabel alloc] init];
     label.text = text;

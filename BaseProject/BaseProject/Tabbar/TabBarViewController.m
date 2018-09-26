@@ -7,7 +7,6 @@
 //
 
 #import "TabBarViewController.h"
-#import "BaseNavigationViewController.h"
 #import "FirstViewController.h"
 #import "SecondViewController.h"
 #import "ThirdViewController.h"
@@ -72,37 +71,6 @@
     viewController.tabBarItem.titlePositionAdjustment = UIOffsetMake(0, -2);
     
     [self addChildViewController:viewController];
-}
-
-#pragma mark - 控制屏幕旋转方法
-- (BOOL)shouldAutorotate
-{
-    BaseNavigationViewController *nav = (BaseNavigationViewController *)self.selectedViewController;
-    if ([nav.visibleViewController isKindOfClass:[NSClassFromString(@"AutorotateViewController") class]])
-    {
-        return YES;
-    }
-    return NO;
-}
-
-- (UIInterfaceOrientationMask)supportedInterfaceOrientations
-{
-    BaseNavigationViewController *nav = (BaseNavigationViewController *)self.selectedViewController;
-    if ([nav.visibleViewController isKindOfClass:[NSClassFromString(@"AutorotateViewController") class]])
-    {
-        return UIInterfaceOrientationMaskAllButUpsideDown;
-    }
-    return UIInterfaceOrientationMaskPortrait;
-}
-
-- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
-{
-    BaseNavigationViewController *nav = (BaseNavigationViewController *)self.selectedViewController;
-    if ([nav.visibleViewController isKindOfClass:[NSClassFromString(@"AutorotateViewController") class]])
-    {
-        return UIInterfaceOrientationLandscapeLeft;
-    }
-    return UIInterfaceOrientationPortrait;
 }
 
 @end

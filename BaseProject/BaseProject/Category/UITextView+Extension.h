@@ -12,5 +12,4 @@
 - (void)insertAttributedText:(NSAttributedString *)text;
 - (void)insertAttributedText:(NSAttributedString *)text settingBlock:(void (^)(NSMutableAttributedString *attributedText))settingBlock;
 - (void)setPlaceholderWithText:(NSString *)text Color:(UIColor *)color;
-
 @end

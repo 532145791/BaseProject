@@ -44,7 +44,5 @@
 + (NSString *)displayName;
 //判空
 +(BOOL)isNull:(id)object;
-//计算字符串的高度
-+ (float)heightForView:(UIView *)view andWidth:(float)width;
 
 @end

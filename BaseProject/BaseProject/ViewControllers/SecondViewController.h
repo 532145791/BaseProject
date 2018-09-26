@@ -6,8 +6,7 @@
 //  Copyright © 2017年 lengchao. All rights reserved.
 //
 
-#import "BaseCollectionViewController.h"
 
-@interface SecondViewController : BaseCollectionViewController
+@interface SecondViewController : BaseViewController
 
 @end

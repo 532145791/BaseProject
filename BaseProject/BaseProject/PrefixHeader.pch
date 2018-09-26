@@ -10,15 +10,13 @@
 
 #define NoKnowError @"抱歉，服务器出错，请重试"
 #define DismissTime 1
-#define BackGround_Color [UIColor colorWithHexString:@"ffffff"] //所有背景颜色
+#define BackGround_Color [UIColor colorWithHexString:@"ffffff"]
 #define Screen_Width [UIScreen mainScreen].bounds.size.width
 #define Screen_Height [UIScreen mainScreen].bounds.size.height
 #define Adapt_Width(x) ((x) * [UIScreen mainScreen].bounds.size.width / 375.0)
 #define Adapt_Height(x) ((x) * [UIScreen mainScreen].bounds.size.height / 667.0)
 #define System_Version [[[UIDevice currentDevice] systemVersion] floatValue]
 #define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
-#define WhiteBackImage @"nav-white-back"
-#define BlackBackImage @"nav-black-back"
 
 //适配iPhone X
 //是否为X
@@ -27,21 +25,18 @@
 #define Home_Indicator (IPHONE_X ? 34 : 0 )
 //导航栏高度
 #define KNavigationBar_HEIGHT (IPHONE_X ? 88 : 64 )
-//顶部距离（关闭、返回按钮等）增加20px
-#define k20HEIGHT(x) (IPHONE_X ? (x)+20 : (x) )
 
 //字体
-#define Font_PingFang_Regular   @"PingFangSC-Regular"
-#define Font_PingFang_Light     @"PingFangSC-Light"
-#define Font_PingFang_Medium    @"PingFangSC-Medium"
-#define Font_PingFang_Semibold  @"PingFangSC-Semibold"
+#define Font_Semibold(fontValue)  [UIFont fontWithName:@"PingFangSC-Semibold"  size:fontValue]
+#define Font_Light(fontValue)  [UIFont fontWithName:@"PingFangSC-Light"  size:fontValue]
+#define Font_Regular(fontValue)  [UIFont fontWithName:@"PingFangSC-Regular"  size:fontValue]
+#define Font_Medium(fontValue)  [UIFont fontWithName:@"PingFangSC-Medium"  size:fontValue]
 
 //第三方
 #import <MJRefresh/MJRefresh.h>
 #import <Masonry.h>
 #import <YYKit.h>
 //工具类
-#import "MD5Tool.h"
 #import "CommonTool.h"
 #import "HttpTool.h"
 #import "ClearCacheTool.h"
@@ -58,10 +53,16 @@
 #import "UIControl+NoRepeat.h"
 #import "NSObject+Extend.h"
 #import "UIView+Masonry.h"
+#import "NSString+MD5.h"
+#import "NSString+Extend.h"
 //common
 #import "Notification.h"
-#import "GlobalVariables.h"
-#import "AppDelegate.h"
 #import "UserInfoManager.h"
+
+//基类
+#import "AppDelegate.h"
+#import "BaseViewController+NavigationBar.h"
+#import "BaseViewController.h"
+#import "BaseNavigationViewController.h"
 #define BaseUrl @""
 #endif /* PrefixHeader_pch */

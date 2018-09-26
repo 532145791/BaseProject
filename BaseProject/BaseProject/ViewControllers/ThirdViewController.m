@@ -14,14 +14,18 @@
 
 @implementation ThirdViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    [self setNavigationWithTitle:@"我的"];
+-(void)initData{
+    self.confDic = @{kNav_Hidden: @(NO),
+                     kNav_Title: @"Third",
+                     kNav_LeftButton: @(MSNavBarItemBlackTypeBack),
+                     kNav_RightButton: @(MSNavBarItemTypeWallet),
+                     kTabbar_Hidden: @(YES),
+                     kNav_TitleColor: [UIColor colorWithHexString:@"333333"],
+                     };
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)viewDidLoad {
+    [super viewDidLoad];
 }
 
 

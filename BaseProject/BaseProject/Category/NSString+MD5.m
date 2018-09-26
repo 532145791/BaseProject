@@ -1,14 +1,14 @@
 //
-//  MD5Tool.m
+//  NSString+MD5.m
 //  BaseProject
 //
-//  Created by 冷超 on 2017/6/30.
-//  Copyright © 2017年 lengchao. All rights reserved.
+//  Created by super on 2018/9/26.
+//  Copyright © 2018年 lengchao. All rights reserved.
 //
 
-#import "MD5Tool.h"
+#import "NSString+MD5.h"
 #import <CommonCrypto/CommonCrypto.h>
-@implementation MD5Tool
+@implementation NSString (MD5)
 #pragma mark - 32位 小写
 +(NSString *)MD5ForLower32Bate:(NSString *)str{
     //要进行UTF8的转码

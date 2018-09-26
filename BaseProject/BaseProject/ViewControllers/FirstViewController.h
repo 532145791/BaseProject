@@ -6,8 +6,6 @@
 //  Copyright © 2017年 lengchao. All rights reserved.
 //
 
-#import "BaseTableViewController.h"
-
-@interface FirstViewController : BaseTableViewController
+@interface FirstViewController : BaseViewController
 
 @end

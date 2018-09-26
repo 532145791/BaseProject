@@ -10,4 +10,5 @@
 
 @interface BaseScrollViewController : BaseViewController
 @property (nonatomic , strong) UIScrollView *scrollView;
+@property (nonatomic , strong) UIView *containerView;
 @end

@@ -120,9 +120,4 @@
     return NO;
 }
 
-+ (float)heightForView:(UIView *)view andWidth:(float)width
-{
-    CGSize sizeToFit = [view sizeThatFits:CGSizeMake(width, MAXFLOAT)];
-    return sizeToFit.height;
-}
 @end
