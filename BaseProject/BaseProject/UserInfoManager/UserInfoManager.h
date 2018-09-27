@@ -1,9 +1,9 @@
 //
 //  UserInfoManager.h
-//  ProjectXmall
+//  BaseProject
 //
-//  Created by 轩辕神赋 on 2017/4/21.
-//  Copyright © 2017年 yao liu. All rights reserved.
+//  Created by 冷超 on 2017/6/30.
+//  Copyright © 2017年 lengchao. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

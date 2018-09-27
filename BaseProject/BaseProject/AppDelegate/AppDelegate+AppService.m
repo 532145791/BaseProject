@@ -13,7 +13,7 @@
     [SVProgressHUD setDefaultStyle:SVProgressHUDStyleDark];
     [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeClear];
     [SVProgressHUD setCornerRadius:2.0];
-    [SVProgressHUD setFont:[UIFont fontWithName:Font_PingFang_Regular size:14.0]];
+    [SVProgressHUD setFont:Font_Regular(14)];
 }
 
 -(void)setUpBugly{

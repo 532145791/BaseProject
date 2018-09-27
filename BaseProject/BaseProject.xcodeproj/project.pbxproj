@@ -190,15 +190,14 @@
 			isa = PBXGroup;
 			children = (
 				BFF13306202ADCAC002A3BAE /* UserInfoManager */,
-				4B390E151F05EDB500E84522 /* Base */,
 				4B390E161F05EDB500E84522 /* Category */,
 				4B390E171F05EDB500E84522 /* Network */,
 				4B390E181F05EDB500E84522 /* Tools */,
 				4B390E1B1F05EE4C00E84522 /* Common */,
-				BFFD963220785FC800928F81 /* ViewModel */,
 				4B390E191F05EDB500E84522 /* ViewControllers */,
 				4B390E1A1F05EDCB00E84522 /* Tabbar */,
 				4B47993820031C5400DA815A /* AppDelegate */,
+				4B390E151F05EDB500E84522 /* Base */,
 				4B390DFE1F05ED5900E84522 /* Supporting Files */,
 			);
 			path = BaseProject;
@@ -353,13 +352,6 @@
 				BFF13309202ADCC4002A3BAE /* UserInfoModel.m */,
 			);
 			path = UserInfoManager;
-			sourceTree = "<group>";
-		};
-		BFFD963220785FC800928F81 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -44,7 +44,6 @@ static NSInteger progressHeight = 2;
 -(void)setUrlStr:(NSString *)urlStr{
     _urlStr = urlStr;
     [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.urlStr]]];
-    [self setNavigationShowBackBtnWithNavigationTitle:self.navigationTitle];
 }
 
 #pragma mark - WKNavigationDelegate
