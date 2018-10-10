@@ -120,4 +120,24 @@
     return NO;
 }
 
++ (UIViewController *)topViewController:(UIViewController *)vc {
+    if ([vc isKindOfClass:[UINavigationController class]]) {
+        return [self topViewController:[(UINavigationController *)vc topViewController]];
+    } else if ([vc isKindOfClass:[UITabBarController class]]) {
+        return [self topViewController:[(UITabBarController *)vc selectedViewController]];
+    } else {
+        return vc;
+    }
+    return nil;
+}
+
++ (UIViewController *)currentViewController
+{
+    UIViewController *currentViewController;
+    currentViewController = [self topViewController:[[UIApplication sharedApplication].keyWindow rootViewController]];
+    while (currentViewController.presentedViewController) {
+        currentViewController = [self topViewController:currentViewController.presentedViewController];
+    }
+    return currentViewController;
+}
 @end

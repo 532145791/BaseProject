@@ -45,4 +45,8 @@
 //判空
 +(BOOL)isNull:(id)object;
 
+/**
+ 获取当前控制器
+ */
++ (UIViewController *)currentViewController;
 @end

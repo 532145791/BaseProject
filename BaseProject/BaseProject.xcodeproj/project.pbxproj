@@ -46,7 +46,6 @@
 		BF53B094215B992000DA4A84 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = BF53B093215B992000DA4A84 /* NSString+MD5.m */; };
 		BF53B098215B9E9600DA4A84 /* BaseViewController+NavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = BF53B097215B9E9600DA4A84 /* BaseViewController+NavigationBar.m */; };
 		BF53B09B215BA52400DA4A84 /* NSString+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = BF53B09A215BA52400DA4A84 /* NSString+Extend.m */; };
-		BFF133032029B37D002A3BAE /* NSObject+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF133022029B37D002A3BAE /* NSObject+Extend.m */; };
 		BFF1330B202ADCC4002A3BAE /* UserInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF13309202ADCC4002A3BAE /* UserInfoModel.m */; };
 		BFF1330C202ADCC4002A3BAE /* UserInfoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF1330A202ADCC4002A3BAE /* UserInfoManager.m */; };
 /* End PBXBuildFile section */
@@ -131,8 +130,6 @@
 		BF53B097215B9E9600DA4A84 /* BaseViewController+NavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "BaseViewController+NavigationBar.m"; sourceTree = "<group>"; };
 		BF53B099215BA52400DA4A84 /* NSString+Extend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Extend.h"; sourceTree = "<group>"; };
 		BF53B09A215BA52400DA4A84 /* NSString+Extend.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extend.m"; sourceTree = "<group>"; };
-		BFF133012029B37D002A3BAE /* NSObject+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Extend.h"; sourceTree = "<group>"; };
-		BFF133022029B37D002A3BAE /* NSObject+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Extend.m"; sourceTree = "<group>"; };
 		BFF13307202ADCC4002A3BAE /* UserInfoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoManager.h; sourceTree = "<group>"; };
 		BFF13308202ADCC4002A3BAE /* UserInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoModel.h; sourceTree = "<group>"; };
 		BFF13309202ADCC4002A3BAE /* UserInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoModel.m; sourceTree = "<group>"; };
@@ -237,8 +234,6 @@
 		4B390E161F05EDB500E84522 /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				BFF133012029B37D002A3BAE /* NSObject+Extend.h */,
-				BFF133022029B37D002A3BAE /* NSObject+Extend.m */,
 				BF53B099215BA52400DA4A84 /* NSString+Extend.h */,
 				BF53B09A215BA52400DA4A84 /* NSString+Extend.m */,
 				4B479935200318A600DA815A /* UITextView+Extension.h */,
@@ -499,7 +494,6 @@
 				4B390E5E1F05FE3900E84522 /* UIView+Additions.m in Sources */,
 				BF30881D2016E10E005A8326 /* AppDelegate+AppService.m in Sources */,
 				4B390E371F05F47000E84522 /* CommonTool.m in Sources */,
-				BFF133032029B37D002A3BAE /* NSObject+Extend.m in Sources */,
 				4BD1BB051FD7DA3E0060281A /* BaseNavigationViewController.m in Sources */,
 				4B25BF461F4D59FA00B4A2C4 /* CropImage.m in Sources */,
 				4B390E491F05FB2600E84522 /* LCProgressHUD.m in Sources */,
