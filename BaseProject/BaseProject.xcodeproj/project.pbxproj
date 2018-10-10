@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		211F4B130C9D963F15E1EDC7 /* libPods-BaseProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 093AF5C21D3EEC996143A416 /* libPods-BaseProject.a */; };
-		4B25BF461F4D59FA00B4A2C4 /* CropImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B25BF451F4D59FA00B4A2C4 /* CropImage.m */; };
 		4B390E001F05ED5900E84522 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B390DFF1F05ED5900E84522 /* main.m */; };
 		4B390E031F05ED5900E84522 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B390E021F05ED5900E84522 /* AppDelegate.m */; };
 		4B390E0B1F05ED5900E84522 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B390E0A1F05ED5900E84522 /* Assets.xcassets */; };
@@ -27,7 +26,6 @@
 		4B390E551F05FC8800E84522 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B390E541F05FC8800E84522 /* SecondViewController.m */; };
 		4B390E581F05FC9200E84522 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B390E571F05FC9200E84522 /* ThirdViewController.m */; };
 		4B390E5D1F05FE3900E84522 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B390E5A1F05FE3900E84522 /* UIView+Extension.m */; };
-		4B390E5E1F05FE3900E84522 /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B390E5C1F05FE3900E84522 /* UIView+Additions.m */; };
 		4B479937200318A700DA815A /* UITextView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B479936200318A600DA815A /* UITextView+Extension.m */; };
 		4B5030161F42DE5A004FA2B0 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B5030151F42DE5A004FA2B0 /* UIImage+Extension.m */; };
 		4B6210D11F62863F003C7EE7 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B6210D01F62863F003C7EE7 /* BaseModel.m */; };
@@ -52,8 +50,6 @@
 
 /* Begin PBXFileReference section */
 		093AF5C21D3EEC996143A416 /* libPods-BaseProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BaseProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4B25BF441F4D59FA00B4A2C4 /* CropImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CropImage.h; sourceTree = "<group>"; };
-		4B25BF451F4D59FA00B4A2C4 /* CropImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CropImage.m; sourceTree = "<group>"; };
 		4B390DFB1F05ED5900E84522 /* BaseProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B390DFF1F05ED5900E84522 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4B390E011F05ED5900E84522 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -90,8 +86,6 @@
 		4B390E571F05FC9200E84522 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 		4B390E591F05FE3900E84522 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		4B390E5A1F05FE3900E84522 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
-		4B390E5B1F05FE3900E84522 /* UIView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Additions.h"; sourceTree = "<group>"; };
-		4B390E5C1F05FE3900E84522 /* UIView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Additions.m"; sourceTree = "<group>"; };
 		4B479935200318A600DA815A /* UITextView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+Extension.h"; sourceTree = "<group>"; };
 		4B479936200318A600DA815A /* UITextView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Extension.m"; sourceTree = "<group>"; };
 		4B5030141F42DE5A004FA2B0 /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
@@ -242,10 +236,6 @@
 				4B8ACC3B1F2F60690020B0F9 /* NSString+Emoji.m */,
 				4B390E591F05FE3900E84522 /* UIView+Extension.h */,
 				4B390E5A1F05FE3900E84522 /* UIView+Extension.m */,
-				4B390E5B1F05FE3900E84522 /* UIView+Additions.h */,
-				4B390E5C1F05FE3900E84522 /* UIView+Additions.m */,
-				4B390E471F05FB2600E84522 /* LCProgressHUD.h */,
-				4B390E481F05FB2600E84522 /* LCProgressHUD.m */,
 				4B390E201F05F1FF00E84522 /* SVProgressHUD+Extend.h */,
 				4B390E211F05F1FF00E84522 /* SVProgressHUD+Extend.m */,
 				4B390E1C1F05EE8100E84522 /* UIColor+Extend.h */,
@@ -284,8 +274,6 @@
 				4B390E361F05F47000E84522 /* CommonTool.m */,
 				4BB40F621F3062F90028E404 /* LocationTool.h */,
 				4BB40F631F3062F90028E404 /* LocationTool.m */,
-				4B25BF441F4D59FA00B4A2C4 /* CropImage.h */,
-				4B25BF451F4D59FA00B4A2C4 /* CropImage.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -315,6 +303,8 @@
 		4B390E1B1F05EE4C00E84522 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				4B390E471F05FB2600E84522 /* LCProgressHUD.h */,
+				4B390E481F05FB2600E84522 /* LCProgressHUD.m */,
 				4B390E411F05F69A00E84522 /* UserDefaults.h */,
 				4B390E421F05F69A00E84522 /* UserDefaults.m */,
 				4B390E3B1F05F62100E84522 /* Notification.h */,
@@ -491,11 +481,9 @@
 				4B390E551F05FC8800E84522 /* SecondViewController.m in Sources */,
 				BF04545B20735BA000E3074F /* UIView+Masonry.m in Sources */,
 				BFF1330B202ADCC4002A3BAE /* UserInfoModel.m in Sources */,
-				4B390E5E1F05FE3900E84522 /* UIView+Additions.m in Sources */,
 				BF30881D2016E10E005A8326 /* AppDelegate+AppService.m in Sources */,
 				4B390E371F05F47000E84522 /* CommonTool.m in Sources */,
 				4BD1BB051FD7DA3E0060281A /* BaseNavigationViewController.m in Sources */,
-				4B25BF461F4D59FA00B4A2C4 /* CropImage.m in Sources */,
 				4B390E491F05FB2600E84522 /* LCProgressHUD.m in Sources */,
 				4B390E521F05FC7C00E84522 /* FirstViewController.m in Sources */,
 				BF3088202016E125005A8326 /* AppDelegate+PushService.m in Sources */,

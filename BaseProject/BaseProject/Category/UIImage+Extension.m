@@ -133,9 +133,7 @@
     return thumbnailImage;
 }
 
-/// 获取屏幕截图
-///
-/// @return 屏幕截图图像
+// 获取屏幕截图
 + (UIImage *)ms_screenShot {
     // 1. 获取到窗口
     UIWindow *window = [UIApplication sharedApplication].keyWindow;
@@ -153,5 +151,20 @@
     UIGraphicsEndImageContext();
     
     return screenShot;
+}
+
+//根据宽高等比缩放原图
++(NSURL *)getImageUrlWithOriginalUrl:(NSString *)originalUrlString width:(CGFloat)width height:(CGFloat)height{
+    NSURL *resultUrl = [NSURL URLWithString:@""];
+    NSRange range = [originalUrlString rangeOfString:@"?"];
+    if (range.location == NSNotFound) {
+        NSString *tmpStr = [NSString stringWithFormat:@"%@?imageView2/2/w/%f/h/%f",originalUrlString,width*3,height*3];
+        resultUrl = [NSURL URLWithString:tmpStr];
+    }else{
+        NSString *tmpStr=[originalUrlString substringToIndex:range.location];
+        [tmpStr stringByAppendingString:[NSString stringWithFormat:@"%@?imageView2/2/w/%f/h/%f",originalUrlString,width*3,height*3]];
+        resultUrl = [NSURL URLWithString:tmpStr];
+    }
+    return resultUrl;
 }
 @end

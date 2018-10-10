@@ -25,20 +25,19 @@
 //图片高斯虚化
 + (UIImage *)blurImageOriImage:(UIImage *)oriImage radius:(CGFloat)radius;
 
-/**
- *  根据图片名返回一张能够自由拉伸的图片 (从中间拉伸)
- */
+//根据图片名返回一张能够自由拉伸的图片 (从中间拉伸)
 + (UIImage *)ms_resizableImage:(NSString *)imgName;
 + (UIImage *)ms_resizableImage:(NSString *)imgName capInsets:(UIEdgeInsets)capInsets;
 
-
-/// 返回一张未被渲染的图片
+// 返回一张未被渲染的图片
 + (UIImage *)ms_imageAlwaysShowOriginalImageWithImageName:(NSString *)imageName;
-/// 获取视频某个时间的帧图片
+
+// 获取视频某个时间的帧图片
 + (UIImage *)ms_thumbnailImageForVideo:(NSURL *)videoURL atTime:(NSTimeInterval)time;
 
-/// /// 获取屏幕截图
-///
-/// @return 屏幕截图图像
+//获取屏幕截图
 + (UIImage *)ms_screenShot;
+
+//根据宽高等比缩放原图
++(NSURL *)getImageUrlWithOriginalUrl:(NSString *)originalUrlString width:(CGFloat)width height:(CGFloat)height;
 @end

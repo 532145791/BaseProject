@@ -18,7 +18,6 @@
 #define System_Version [[[UIDevice currentDevice] systemVersion] floatValue]
 #define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
 
-//适配iPhone X
 //是否为X
 #define IPHONE_X ((Screen_Width==375&&Screen_Height==812)? YES : NO)
 //底部距离
@@ -45,7 +44,6 @@
 //类别
 #import "SVProgressHUD+Extend.h"
 #import "UIColor+Extend.h"
-#import "UIView+Additions.h"
 #import "UIView+Extension.h"
 #import "NSString+Emoji.h"
 #import "UIImage+Extension.h"
