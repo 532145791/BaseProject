@@ -17,4 +17,8 @@ pod 'UMCAnalytics'
 #分享
 pod 'UMCShare/Social/ReducedWeChat'
 pod 'UMCShare/Social/ReducedQQ'
+#rac信号量
+pod 'ReactiveObjC'
+#内存泄露检测工具
+pod 'MLeaksFinder'
 end
