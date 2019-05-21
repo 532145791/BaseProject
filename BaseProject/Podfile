@@ -4,7 +4,7 @@ pod 'MJRefresh'
 pod 'AFNetworking'
 pod 'Masonry'
 pod 'YYKit'
-
+pod 'IQKeyboardManager'
 #bug统计
 pod 'Bugly'
 
@@ -21,4 +21,6 @@ pod 'UMCShare/Social/ReducedQQ'
 pod 'ReactiveObjC'
 #内存泄露检测工具
 pod 'MLeaksFinder'
+#蘑菇街组件
+pod 'MGJRouter'
 end

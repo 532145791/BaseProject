@@ -1,27 +1,19 @@
-//
-//  HttpTool.h
-//  ProjectXmall
-//
-//  Created by zhihong meng on 2017/5/27.
-//  Copyright © 2017年 yao liu. All rights reserved.
-//
+
+//-------------------网络请求管理类---------------------//
 
 #import <Foundation/Foundation.h>
+#import <AFNetworking.h>
+#import "ResultModel.h"
+extern NSString *const RACAFNResponseObjectErrorKey;
 
 @interface HttpTool : NSObject
 /**
  get请求
  */
-+ (void)getWithUrl:(NSString *)url paras:(id )paras success:(void(^)(id result))success failure:(void(^)(NSString *error))failure;
++ (void)getWithUrl:(NSString *)url paras:(id )paras success:(void(^)(ResultModel *result))success failure:(void(^)(NSError *error))failure;
 
 /**
  post请求
  */
-+ (void)postWithUrl:(NSString *)url paras:(id )paras success:(void(^)(id result))success failure:(void(^)(NSString *error))failure;
-
-/**
- post 表单请求
- */
-+ (void)postFormDataWithUrl:(NSString *)url paras:(id )paras success:(void (^)(id result))success failure:(void (^)(NSString *error))failure;
-
++ (void)postWithUrl:(NSString *)url paras:(id )paras success:(void(^)(ResultModel *result))success failure:(void(^)(NSError *error))failure;
 @end

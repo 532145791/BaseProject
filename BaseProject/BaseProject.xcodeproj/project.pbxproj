@@ -33,7 +33,6 @@
 		4BB40F641F3062F90028E404 /* LocationTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BB40F631F3062F90028E404 /* LocationTool.m */; };
 		4BB40F6D1F3074130028E404 /* BaseScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BB40F6C1F3074130028E404 /* BaseScrollViewController.m */; };
 		4BD1BA011FB2D4BB0060281A /* UIControl+NoRepeat.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD1BA001FB2D4BB0060281A /* UIControl+NoRepeat.m */; };
-		4BD1BA0A1FB30FF80060281A /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD1BA091FB30FF80060281A /* Reachability.m */; };
 		4BD1BB051FD7DA3E0060281A /* BaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD1BB041FD7DA3E0060281A /* BaseNavigationViewController.m */; };
 		4BF1F60A1F42E795009C1DC4 /* UIViewController+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF1F6091F42E795009C1DC4 /* UIViewController+Extension.m */; };
 		BF04545B20735BA000E3074F /* UIView+Masonry.m in Sources */ = {isa = PBXBuildFile; fileRef = BF04545A20735BA000E3074F /* UIView+Masonry.m */; };
@@ -44,6 +43,7 @@
 		BF53B094215B992000DA4A84 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = BF53B093215B992000DA4A84 /* NSString+MD5.m */; };
 		BF53B098215B9E9600DA4A84 /* BaseViewController+NavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = BF53B097215B9E9600DA4A84 /* BaseViewController+NavigationBar.m */; };
 		BF53B09B215BA52400DA4A84 /* NSString+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = BF53B09A215BA52400DA4A84 /* NSString+Extend.m */; };
+		BF79D1252293F57500870CD7 /* ResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BF79D1242293F57500870CD7 /* ResultModel.m */; };
 		BFF1330B202ADCC4002A3BAE /* UserInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF13309202ADCC4002A3BAE /* UserInfoModel.m */; };
 		BFF1330C202ADCC4002A3BAE /* UserInfoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF1330A202ADCC4002A3BAE /* UserInfoManager.m */; };
 /* End PBXBuildFile section */
@@ -100,8 +100,6 @@
 		4BB40F6C1F3074130028E404 /* BaseScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseScrollViewController.m; sourceTree = "<group>"; };
 		4BD1B9FF1FB2D4BA0060281A /* UIControl+NoRepeat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+NoRepeat.h"; sourceTree = "<group>"; };
 		4BD1BA001FB2D4BB0060281A /* UIControl+NoRepeat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+NoRepeat.m"; sourceTree = "<group>"; };
-		4BD1BA081FB30FF80060281A /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
-		4BD1BA091FB30FF80060281A /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		4BD1BB031FD7DA3E0060281A /* BaseNavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseNavigationViewController.h; sourceTree = "<group>"; };
 		4BD1BB041FD7DA3E0060281A /* BaseNavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationViewController.m; sourceTree = "<group>"; };
 		4BF1F6081F42E795009C1DC4 /* UIViewController+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Extension.h"; sourceTree = "<group>"; };
@@ -124,6 +122,12 @@
 		BF53B097215B9E9600DA4A84 /* BaseViewController+NavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "BaseViewController+NavigationBar.m"; sourceTree = "<group>"; };
 		BF53B099215BA52400DA4A84 /* NSString+Extend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Extend.h"; sourceTree = "<group>"; };
 		BF53B09A215BA52400DA4A84 /* NSString+Extend.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extend.m"; sourceTree = "<group>"; };
+		BF79D11F2293F4CE00870CD7 /* AppMacroDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppMacroDefine.h; sourceTree = "<group>"; };
+		BF79D1202293F4CE00870CD7 /* AppDefineBaseUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDefineBaseUrl.h; sourceTree = "<group>"; };
+		BF79D1212293F4CE00870CD7 /* APPURLPatternConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPURLPatternConst.h; sourceTree = "<group>"; };
+		BF79D1222293F4CE00870CD7 /* AppCommonColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppCommonColors.h; sourceTree = "<group>"; };
+		BF79D1232293F57400870CD7 /* ResultModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultModel.h; sourceTree = "<group>"; };
+		BF79D1242293F57500870CD7 /* ResultModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultModel.m; sourceTree = "<group>"; };
 		BFF13307202ADCC4002A3BAE /* UserInfoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoManager.h; sourceTree = "<group>"; };
 		BFF13308202ADCC4002A3BAE /* UserInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoModel.h; sourceTree = "<group>"; };
 		BFF13309202ADCC4002A3BAE /* UserInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoModel.m; sourceTree = "<group>"; };
@@ -202,6 +206,10 @@
 				4B390E0F1F05ED5900E84522 /* Info.plist */,
 				4B390E1F1F05F1B100E84522 /* PrefixHeader.pch */,
 				4B390DFF1F05ED5900E84522 /* main.m */,
+				BF79D1222293F4CE00870CD7 /* AppCommonColors.h */,
+				BF79D1202293F4CE00870CD7 /* AppDefineBaseUrl.h */,
+				BF79D1212293F4CE00870CD7 /* APPURLPatternConst.h */,
+				BF79D11F2293F4CE00870CD7 /* AppMacroDefine.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -257,8 +265,8 @@
 		4B390E171F05EDB500E84522 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				4BD1BA081FB30FF80060281A /* Reachability.h */,
-				4BD1BA091FB30FF80060281A /* Reachability.m */,
+				BF79D1232293F57400870CD7 /* ResultModel.h */,
+				BF79D1242293F57500870CD7 /* ResultModel.m */,
 				4B390E2C1F05F45500E84522 /* HttpTool.h */,
 				4B390E2D1F05F45500E84522 /* HttpTool.m */,
 			);
@@ -274,6 +282,10 @@
 				4B390E361F05F47000E84522 /* CommonTool.m */,
 				4BB40F621F3062F90028E404 /* LocationTool.h */,
 				4BB40F631F3062F90028E404 /* LocationTool.m */,
+				4B390E471F05FB2600E84522 /* LCProgressHUD.h */,
+				4B390E481F05FB2600E84522 /* LCProgressHUD.m */,
+				4B390E411F05F69A00E84522 /* UserDefaults.h */,
+				4B390E421F05F69A00E84522 /* UserDefaults.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -303,10 +315,6 @@
 		4B390E1B1F05EE4C00E84522 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				4B390E471F05FB2600E84522 /* LCProgressHUD.h */,
-				4B390E481F05FB2600E84522 /* LCProgressHUD.m */,
-				4B390E411F05F69A00E84522 /* UserDefaults.h */,
-				4B390E421F05F69A00E84522 /* UserDefaults.m */,
 				4B390E3B1F05F62100E84522 /* Notification.h */,
 				4B390E3C1F05F62100E84522 /* Notification.m */,
 			);
@@ -382,6 +390,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -433,12 +442,14 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-BaseProject/Pods-BaseProject-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
 				"${PODS_ROOT}/UMCShare/UMShare/UMSocialSDKPlugin/UMSocialSDKPromptResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/UMSocialSDKPromptResources.bundle",
@@ -455,6 +466,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF79D1252293F57500870CD7 /* ResultModel.m in Sources */,
 				4B390E4F1F05FBB800E84522 /* BaseViewController.m in Sources */,
 				4B479937200318A700DA815A /* UITextView+Extension.m in Sources */,
 				4B390E3A1F05F59400E84522 /* ClearCacheTool.m in Sources */,
@@ -480,7 +492,6 @@
 				4BD1BA011FB2D4BB0060281A /* UIControl+NoRepeat.m in Sources */,
 				4BF1F60A1F42E795009C1DC4 /* UIViewController+Extension.m in Sources */,
 				BF53B098215B9E9600DA4A84 /* BaseViewController+NavigationBar.m in Sources */,
-				4BD1BA0A1FB30FF80060281A /* Reachability.m in Sources */,
 				4BB40F6D1F3074130028E404 /* BaseScrollViewController.m in Sources */,
 				4B390E3D1F05F62100E84522 /* Notification.m in Sources */,
 				4BB40F641F3062F90028E404 /* LocationTool.m in Sources */,

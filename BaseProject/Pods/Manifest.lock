@@ -16,7 +16,9 @@ PODS:
     - AFNetworking/NSURLSession
   - Bugly (2.5.0)
   - FBRetainCycleDetector (0.1.4)
+  - IQKeyboardManager (6.3.0)
   - Masonry (1.0.2)
+  - MGJRouter (0.10.0)
   - MJRefresh (3.1.12)
   - MLeaksFinder (1.0.0):
     - FBRetainCycleDetector
@@ -41,7 +43,9 @@ PODS:
 DEPENDENCIES:
   - AFNetworking
   - Bugly
+  - IQKeyboardManager
   - Masonry
+  - MGJRouter
   - MJRefresh
   - MLeaksFinder
   - ReactiveObjC
@@ -58,7 +62,9 @@ SPEC REPOS:
     - AFNetworking
     - Bugly
     - FBRetainCycleDetector
+    - IQKeyboardManager
     - Masonry
+    - MGJRouter
     - MJRefresh
     - MLeaksFinder
     - ReactiveObjC
@@ -73,7 +79,9 @@ SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   Bugly: 3ca9f255c01025582df26f9222893b383c7e4b4e
   FBRetainCycleDetector: 46f8179bbb1c587deee3ea838a1a3ee02acf5015
+  IQKeyboardManager: 2ca9d64893247556f53523dcd8d78641f0ba7c23
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  MGJRouter: 15d94541eb2cc81eff7d577337288feb7ae9575f
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   MLeaksFinder: 8c435bd2f6d070af18cff082b503b21adc130fc0
   ReactiveObjC: 2a38ea15335de4119d8b17caf1db1484f61db902
@@ -84,6 +92,6 @@ SPEC CHECKSUMS:
   UMCShare: d63008fcea9b2e1e52bc62816b1611ee7d5af50e
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: db7b2a1f9b44594de80b471f8bef586d894a529c
+PODFILE CHECKSUM: 2f13a07a736fa3da95ca08fe927107c9315b6228
 
 COCOAPODS: 1.6.0
